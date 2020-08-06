@@ -19,9 +19,11 @@ commands from inside this container:
 docker-compose exec php-fpm sh
 ```
 
-Finally, get the database setup by running:
+Finally, download the Composer dependencies and get the database
+set up by running (from inside the `php-fpm` container):
 
 ```
+composer install
 ./bin/console doctrine:database:create
 ./bin/console doctrine:migrations:migrate --no-interaction
 ./bin/console doctrine:fixtures:load --no-interaction
