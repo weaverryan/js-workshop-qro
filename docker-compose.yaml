@@ -23,6 +23,7 @@ services:
             - DATABASE_URL=mysql://root:@database:3306/main
         volumes:
             - ./:/var/www:cached
+            - ./docker/php-fpm/php.ini:/usr/local/etc/php/php.ini
 
     nginx:
         build:
