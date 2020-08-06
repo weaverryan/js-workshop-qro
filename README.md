@@ -12,6 +12,11 @@ To get the application running, first start the Docker containers:
 docker-compose up -d
 ``` 
 
+> If you get any "port is already allocated" errors, you may already
+> have another Docker project running that is trying to share ports
+> to your local machine. Try shutting those down. If that doesn't help,
+> let me know!
+
 Next, "sh" into the `php-fpm` container. We'll be running *all* of our
 commands from inside this container:
 
