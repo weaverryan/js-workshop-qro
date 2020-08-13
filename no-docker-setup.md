@@ -49,4 +49,14 @@ php -S localhost:8089 -t web
 
 You should now be able to see the site at http://localhost:8089
 
+### 5) Make sure you have "node" and "yarn" installed
+
+Since you're not using Docker, make sure you have `node` and `yarn`
+installed and that you can run:
+
+```
+node -v
+yarn -v
+```
+
 Have fun!

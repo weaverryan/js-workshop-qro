@@ -64,13 +64,3 @@ want to access the site via http://javascript.local.com:8089/:
 ```
 127.0.0.1 javascript.local.com
 ```
-
-### 5) Make sure you have "node" and "yarn" installed
-
-Since you're not using Docker, make sure you have `node` and `yarn`
-installed and that you can run:
-
-```
-node -v
-yarn -v
-```
