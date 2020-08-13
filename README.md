@@ -6,6 +6,8 @@ and other trendy stuff during our training!
 
 ## Setup!
 
+### 1) Start Docker
+
 To get the application running, first start the Docker containers:
 
 ```
@@ -17,11 +19,13 @@ docker-compose up -d
 > to your local machine. Try shutting those down. If that doesn't help,
 > let me know!
 
-Next, "sh" into the `web` container. We'll be running *all* of our
+### Initializing the Database
+
+Next, "bash" into the `web` container. We'll be running *all* of our
 commands from inside this container:
 
 ```
-docker-compose exec web sh
+docker-compose exec web bash
 ```
 
 Finally, download the Composer dependencies and get the database
@@ -33,6 +37,8 @@ composer install
 ./bin/console doctrine:migrations:migrate --no-interaction
 ./bin/console doctrine:fixtures:load --no-interaction
 ```
+
+### 3) Accessing the Site!
 
 That's it! Port `8089` is exposed via docker, so you should now be able
 to access the site by going to:
