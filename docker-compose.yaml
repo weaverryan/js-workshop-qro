@@ -7,11 +7,11 @@ services:
             MYSQL_ROOT_PASSWORD: ''
             MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
         ports:
-            - "3306:3306"
+            - "3310:3306"
         volumes:
             - ./docker/database/data:/var/lib/mysql
 
-    php-fpm:
+    web:
         build:
             context: ./docker/php-fpm
         depends_on:
@@ -34,6 +34,8 @@ services:
             - ./docker/nginx/conf.d/:/etc/nginx/conf.d
             - ./var/log:/var/log
         depends_on:
-            - php-fpm
+            - web
         ports:
-            - "8080:80"
+            - "8089:80"
+        extra_hosts:
+            - 'javascript.local.com:127.0.0.1'

@@ -17,15 +17,15 @@ docker-compose up -d
 > to your local machine. Try shutting those down. If that doesn't help,
 > let me know!
 
-Next, "sh" into the `php-fpm` container. We'll be running *all* of our
+Next, "sh" into the `web` container. We'll be running *all* of our
 commands from inside this container:
 
 ```
-docker-compose exec php-fpm sh
+docker-compose exec web sh
 ```
 
 Finally, download the Composer dependencies and get the database
-set up by running (from inside the `php-fpm` container):
+set up by running (from inside the `web` container):
 
 ```
 composer install
@@ -34,8 +34,16 @@ composer install
 ./bin/console doctrine:fixtures:load --no-interaction
 ```
 
-That's it! You should now be able to access the site by going to:
+That's it! Port `8089` is exposed via docker, so you should now be able
+to access the site by going to:
 
-http://127.0.0.1:8080/
+http://127.0.0.1:8089/
 
 If you can see the "Cauldron Overflow" app, then you're ready!
+
+Optionally, you can add the following to your "hosts" file if you
+want to access the site via http://javascript.local.com:8089/:
+
+```
+127.0.0.1 javascript.local.com
+```
