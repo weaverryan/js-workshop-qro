@@ -1,4 +1,4 @@
 framework:
     assets:
 # removed so that app works without Encore initially
-#        json_manifest_path: '%kernel.project_dir%/public/build/manifest.json'
+#        json_manifest_path: '%kernel.project_dir%/web/build/manifest.json'
