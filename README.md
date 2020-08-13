@@ -13,6 +13,9 @@ local machine.
 
 ### 2) Start Docker
 
+**NOTE**: If you prefer to *not* use Docker, that's ok! See
+[no-docker-setup.md](no-docker-setup.md) for details.
+
 To get the application running, first start the Docker containers. From
 inside this directory, run:
 
