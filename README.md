@@ -18,7 +18,7 @@ inside this directory, run:
 
 ```
 docker-compose up -d
-``` 
+```
 
 > If you get any "port is already allocated" errors, you may already
 > have another Docker project running that is trying to share ports
@@ -33,6 +33,8 @@ commands from inside this container:
 ```
 docker-compose exec web bash
 ```
+
+This will take you to the working directory, which is `/var/www`.
 
 Finally, download the Composer dependencies and get the database
 set up by running (from inside the `web` container):
