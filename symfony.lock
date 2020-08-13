@@ -334,9 +334,6 @@
     "symfony/http-kernel": {
         "version": "v5.0.4"
     },
-    "symfony/inflector": {
-        "version": "v5.1.2"
-    },
     "symfony/maker-bundle": {
         "version": "1.0",
         "recipe": {
