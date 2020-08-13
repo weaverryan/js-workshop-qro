@@ -6,9 +6,15 @@ and other trendy stuff during our training!
 
 ## Setup!
 
-### 1) Start Docker
+### 1) Get this code!
 
-To get the application running, first start the Docker containers:
+Use whatever `git` tool you like to clone this repository to your
+local machine.
+
+### 2) Start Docker
+
+To get the application running, first start the Docker containers. From
+inside this directory, run:
 
 ```
 docker-compose up -d
@@ -19,7 +25,7 @@ docker-compose up -d
 > to your local machine. Try shutting those down. If that doesn't help,
 > let me know!
 
-### Initializing the Database
+### 3) Initializing the Database
 
 Next, "bash" into the `web` container. We'll be running *all* of our
 commands from inside this container:
@@ -38,7 +44,7 @@ composer install
 ./bin/console doctrine:fixtures:load --no-interaction
 ```
 
-### 3) Accessing the Site!
+### 4) Accessing the Site!
 
 That's it! Port `8089` is exposed via docker, so you should now be able
 to access the site by going to:
