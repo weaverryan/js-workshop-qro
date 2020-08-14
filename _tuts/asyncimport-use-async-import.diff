@@ -1,0 +1,13 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index 9d67a0a..a67d8c2 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -4,5 +4,7 @@ import '../css/app.css';
+ 
+ const comments = document.querySelectorAll('.js-comment-container');
+ if (comments.length > 0) {
+-  console.log('we should load the comments logic!');
++  import('./components/comment').then(Comment => {
++    console.log(Comment);
++  });
+ }

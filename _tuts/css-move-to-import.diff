@@ -8,7 +8,7 @@ index 85bc3f6..8b3666b 100644
      font-family: spartan;
      color: #444;
 diff --git a/web/assets/js/app.js b/web/assets/js/app.js
-index 155b987..8995437 100644
+index efb59d0..435b60e 100644
 --- a/web/assets/js/app.js
 +++ b/web/assets/js/app.js
 @@ -1,6 +1,5 @@
