@@ -1,13 +1,13 @@
 diff --git a/city.js b/city.js
-index bfb8709..228a8a8 100644
+index 017eca9..32130f2 100644
 --- a/city.js
 +++ b/city.js
 @@ -8,7 +8,7 @@ module.exports = class {
-     }
+   }
  
-     /**
--     * @returns {Promise<void>}
-+     * @returns {Promise<Number>}
-      */
-     async printNameLater() {
-         await setTimeout(() => {
+   /**
+-   * @returns {Promise<void>}
++   * @returns {Promise<Number>}
+    */
+   async printNameLater () {
+     await setTimeout(() => {
