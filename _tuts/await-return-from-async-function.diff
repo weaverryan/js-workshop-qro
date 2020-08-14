@@ -1,0 +1,12 @@
+diff --git a/city.js b/city.js
+index 88a2468..bfb8709 100644
+--- a/city.js
++++ b/city.js
+@@ -15,5 +15,7 @@ module.exports = class {
+             //reject();
+             console.log(this.name);
+         }, 1000);
++
++        return Math.random();
+     }
+ }
