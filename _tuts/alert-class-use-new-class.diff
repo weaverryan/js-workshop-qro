@@ -1,10 +1,10 @@
 diff --git a/assets/js/app.js b/assets/js/app.js
-index 4c77c69..d59b325 100644
+index 8995437..aa542c2 100644
 --- a/assets/js/app.js
 +++ b/assets/js/app.js
 @@ -1,4 +1,4 @@
--import notify from './notify';
-+import Notification from './notify';
+-import sendAlert from './alert';
++import Alert from './alert';
  import $ from 'jquery';
  import '../css/app.css';
  
@@ -12,7 +12,7 @@ index 4c77c69..d59b325 100644
    });
  
    $container.find('.js-vote-total').text(data.votes);
--  notify('Vote counted!');
-+  const notification = new Notification('Vote counted!');
-+  notification.render();
+-  sendAlert('Vote counted!');
++  const voteAlert = new Alert('Vote counted!');
++  voteAlert.render();
  });
