@@ -1,0 +1,10 @@
+diff --git a/.gitignore b/.gitignore
+index e36e758..ce4f094 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -10,3 +10,5 @@
+ ###< symfony/framework-bundle ###
+ 
+ /docker/database/data
++/node_modules/
++/web/build
