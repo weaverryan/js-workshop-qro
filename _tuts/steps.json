@@ -124,7 +124,67 @@
             "id": "await-update-jsdoc",
             "name": "Await: update jsdoc",
             "description": null
+        },
+        {
+            "id": "app-js-tweaks-use-const",
+            "name": "app.js Tweaks: use const",
+            "description": null
+        },
+        {
+            "id": "app-js-tweaks-try-to-use-await",
+            "name": "app.js Tweaks: try to use await",
+            "description": null
+        },
+        {
+            "id": "app-js-tweaks-add-async",
+            "name": "app.js Tweaks: add async",
+            "description": null
+        },
+        {
+            "id": "app-js-tweaks-add-require",
+            "name": "app.js Tweaks: add require",
+            "description": null
+        },
+        {
+            "id": "encore-install-encore",
+            "name": "Encore: install Encore",
+            "description": null
+        },
+        {
+            "id": "encore-delete-me",
+            "name": "Encore: delete me",
+            "description": null
+        },
+        {
+            "id": "encore-bootstrap-webpack-config-js",
+            "name": "Encore: bootstrap webpack.config.js",
+            "description": null
+        },
+        {
+            "id": "encore-use-build-js",
+            "name": "Encore: use build js",
+            "description": null
+        },
+        {
+            "id": "encore-ignore-node-modules",
+            "name": "Encore: ignore node_modules\/",
+            "description": null
+        },
+        {
+            "id": "modules-refactor-to-import-export",
+            "name": "Modules: refactor to import\/export",
+            "description": null
+        },
+        {
+            "id": "eslint-add-config-file",
+            "name": "ESLint: add config file",
+            "description": null
+        },
+        {
+            "id": "eslint-install-it",
+            "name": "ESLint: install it",
+            "description": null
         }
     ],
-    "sha": "14caa2f77ca61286a8df7d3db7cc60cc6ec41552"
+    "sha": "06e59605a57163db39e8356dda55e8417a5d3a05"
 }
