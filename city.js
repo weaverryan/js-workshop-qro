@@ -1,9 +1,9 @@
 module.exports = class {
-  constructor(name) {
+  constructor (name) {
     this.name = name;
   }
 
-  getName() {
+  getName () {
     return this.name;
   }
 }
