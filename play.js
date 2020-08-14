@@ -13,11 +13,11 @@ qro.printNameLater()
             }, 2000);
         });
     })
-    .then((data) => {
-        console.log(data);
-    })
     .catch(() => {
         console.log('I failed!');
+    })
+    .then((data) => {
+        console.log(data);
     })
 ;
 
