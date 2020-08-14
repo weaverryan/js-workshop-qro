@@ -1,7 +1,11 @@
 export default class {
   constructor (message, options) {
     this.message = message;
-    this.options = options;
+
+    const defaultOptions = {
+      mode: 'success',
+    };
+    this.options = { ...defaultOptions, ...options };
   }
 
   render () {
