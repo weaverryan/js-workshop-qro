@@ -12,15 +12,8 @@ module.exports = class {
       setTimeout(() => {
         console.log(this.name);
 
-<<<<<<< HEAD
-                resolve(Math.random());
-            }, 1000);
-        });
-    }
-=======
-        resolve();
+        resolve(Math.random());
       }, 1000);
     });
   }
->>>>>>> _tuts/master/promise-do-something-after
 }
