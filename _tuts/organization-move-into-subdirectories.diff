@@ -1,0 +1,12 @@
+diff --git a/assets/js/alert.js b/assets/js/components/alert.js
+similarity index 100%
+rename from assets/js/alert.js
+rename to assets/js/components/alert.js
+diff --git a/assets/js/comment.js b/assets/js/components/comment.js
+similarity index 100%
+rename from assets/js/comment.js
+rename to assets/js/components/comment.js
+diff --git a/assets/js/random-message.js b/assets/js/utilities/random-message.js
+similarity index 100%
+rename from assets/js/random-message.js
+rename to assets/js/utilities/random-message.js
