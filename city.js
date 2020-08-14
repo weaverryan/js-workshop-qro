@@ -8,8 +8,12 @@ module.exports = class {
     }
 
     printNameLater() {
-        setTimeout(() => {
-            console.log(this.name);
-        }, 1000);
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log(this.name);
+
+                resolve();
+            }, 1000);
+        });
     }
 }
