@@ -1,9 +1,11 @@
+import '../css/notify.css';
+
 export default class {
-  constructor (message) {
+  constructor(message) {
     this.message = message;
   }
 
-  render () {
+  render() {
     const element = document.createElement('div');
     element.classList.add('alert', 'alert-success', 'notification');
     element.innerHTML = `<span class="fa fa-lightbulb"></span> ${message}`;
