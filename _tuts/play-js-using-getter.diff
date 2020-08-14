@@ -1,19 +1,19 @@
 diff --git a/city.js b/city.js
-index c4979a0..1422236 100644
+index b5910ac..b97a1cd 100644
 --- a/city.js
 +++ b/city.js
 @@ -1,9 +1,9 @@
  module.exports = class {
-     constructor(name) {
--        this.name = name;
-+        this._name = name;
-     }
+   constructor (name) {
+-    this.name = name;
++    this._name = name;
+   }
  
--    getName() {
--        return this.name;
-+    get name() {
-+        return this._name;
-     }
+-  getName () {
+-    return this.name;
++  get name () {
++    return this._name;
+   }
  }
 diff --git a/play.js b/play.js
 index 2f02eaa..1373080 100644
