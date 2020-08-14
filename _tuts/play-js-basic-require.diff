@@ -1,0 +1,16 @@
+diff --git a/city.js b/city.js
+new file mode 100644
+index 0000000..30f142b
+--- /dev/null
++++ b/city.js
+@@ -0,0 +1 @@
++module.exports = 'Querétaro';
+diff --git a/play.js b/play.js
+index 48d7d7c..6f25871 100644
+--- a/play.js
++++ b/play.js
+@@ -1,3 +1,3 @@
+-const city = 'Querétaro';
++const city = require('./city');
+ 
+ console.log(city);
