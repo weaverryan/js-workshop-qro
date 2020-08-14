@@ -176,6 +176,11 @@
             "description": null
         },
         {
+            "id": "modules-add-scripts",
+            "name": "Modules: add \"scripts\"",
+            "description": null
+        },
+        {
             "id": "eslint-add-config-file",
             "name": "ESLint: add config file",
             "description": null
@@ -184,7 +189,52 @@
             "id": "eslint-install-it",
             "name": "ESLint: install it",
             "description": null
+        },
+        {
+            "id": "packages-remove-jquery-script",
+            "name": "Packages: remove jQuery script",
+            "description": null
+        },
+        {
+            "id": "packages-install-jquery",
+            "name": "Packages: install jQuery",
+            "description": null
+        },
+        {
+            "id": "packages-import",
+            "name": "Packages: import $",
+            "description": null
+        },
+        {
+            "id": "css-import-app-css",
+            "name": "CSS: import app.css",
+            "description": null
+        },
+        {
+            "id": "css-update-link-tag",
+            "name": "CSS: update link tag",
+            "description": null
+        },
+        {
+            "id": "css-install-bootstrap",
+            "name": "CSS: install bootstrap",
+            "description": null
+        },
+        {
+            "id": "css-require-bootstrap",
+            "name": "CSS: require bootstrap",
+            "description": null
+        },
+        {
+            "id": "css-move-to-import",
+            "name": "CSS: move to @import",
+            "description": null
+        },
+        {
+            "id": "css-simplify-to-bootstrap",
+            "name": "CSS: simplify to ~bootstrap",
+            "description": null
         }
     ],
-    "sha": "06e59605a57163db39e8356dda55e8417a5d3a05"
+    "sha": "7ae4617aae061827cfd6bd38bfd77ab0c8beada9"
 }
