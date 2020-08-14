@@ -16,7 +16,7 @@ index 7991c94..b044acb 100644
  
    render () {
 diff --git a/assets/js/app.js b/assets/js/app.js
-index 5cb5913..92640d3 100644
+index dd9c159..4b48f43 100644
 --- a/assets/js/app.js
 +++ b/assets/js/app.js
 @@ -19,7 +19,7 @@ $('.js-comment-vote').on('click', async function (e) {
