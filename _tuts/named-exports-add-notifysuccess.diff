@@ -1,0 +1,16 @@
+diff --git a/assets/js/alert.js b/assets/js/alert.js
+index e9893d8..d06abf1 100644
+--- a/assets/js/alert.js
++++ b/assets/js/alert.js
+@@ -33,3 +33,11 @@ export default class {
+     return Boolean(this.element);
+   }
+ }
++
++export function alertSuccess (message, options = {}) {
++  options.mode = 'success';
++  const successAlert = new Alert(message, options);
++  successAlert.render();
++
++  return successAlert;
++}
