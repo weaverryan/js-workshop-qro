@@ -12,7 +12,8 @@ module.exports = class {
             setTimeout(() => {
                 console.log(this.name);
 
-                resolve(Math.random());
+                //resolve(Math.random());
+                reject();
             }, 1000);
         });
     }
