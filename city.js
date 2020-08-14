@@ -7,7 +7,7 @@ module.exports = class {
     return this._name;
   }
 
-  printNameLater() {
+  printNameLater () {
     setTimeout(function () {
       console.log(this.name);
     }, 1000);
