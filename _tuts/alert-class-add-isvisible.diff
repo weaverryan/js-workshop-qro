@@ -24,7 +24,7 @@ index 568522b..7f1d068 100644
    }
  }
 diff --git a/assets/js/app.js b/assets/js/app.js
-index aa542c2..92640d3 100644
+index 6a91b3f..4b48f43 100644
 --- a/assets/js/app.js
 +++ b/assets/js/app.js
 @@ -21,4 +21,5 @@ $('.js-comment-vote').on('click', async function (e) {
