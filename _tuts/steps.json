@@ -279,7 +279,47 @@
             "id": "alert-class-add-isvisible",
             "name": "Alert Class: add isVisible()",
             "description": null
+        },
+        {
+            "id": "mode-add-mode-option-to-alert",
+            "name": "Mode: add \"mode\" option to Alert",
+            "description": null
+        },
+        {
+            "id": "mode-default-options",
+            "name": "Mode: default options",
+            "description": null
+        },
+        {
+            "id": "mode-make-argument-optional",
+            "name": "Mode: make argument optional",
+            "description": null
+        },
+        {
+            "id": "mode-add-jsdoc",
+            "name": "Mode: add jsdoc",
+            "description": null
+        },
+        {
+            "id": "mode-better-jsdoc",
+            "name": "Mode: better jsdoc",
+            "description": null
+        },
+        {
+            "id": "named-exports-add-notifysuccess",
+            "name": "Named Exports: add notifySuccess",
+            "description": null
+        },
+        {
+            "id": "named-exports-give-alert-class-a-name",
+            "name": "Named Exports: give Alert class a name",
+            "description": null
+        },
+        {
+            "id": "named-exports-use-named-import",
+            "name": "Named Exports: use named import",
+            "description": null
         }
     ],
-    "sha": "63d27cca87ba67cca0c077ffd01a589e14f19ae1"
+    "sha": "3ffd86a2db045befec29de8a3451fc04e174ccd6"
 }
