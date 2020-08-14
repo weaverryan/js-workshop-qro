@@ -12,7 +12,7 @@ module.exports = class {
             setTimeout(() => {
                 console.log(this.name);
 
-                resolve();
+                resolve(Math.random());
             }, 1000);
         });
     }
