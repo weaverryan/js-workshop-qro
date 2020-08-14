@@ -8,7 +8,7 @@ index 5c59f18..d1405b3 100644
    alert(message);
  };
 diff --git a/web/assets/js/app.js b/web/assets/js/app.js
-index dd2ca23..6055c60 100644
+index b6c4515..ff5548a 100644
 --- a/web/assets/js/app.js
 +++ b/web/assets/js/app.js
 @@ -1,4 +1,4 @@
