@@ -11,7 +11,7 @@ index b15e59e..5531077 100644
          {% endblock %}
      </head>
 diff --git a/web/assets/js/app.js b/web/assets/js/app.js
-index 8995437..155b987 100644
+index 435b60e..efb59d0 100644
 --- a/web/assets/js/app.js
 +++ b/web/assets/js/app.js
 @@ -1,5 +1,6 @@
