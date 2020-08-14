@@ -1,0 +1,28 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index 770ce93..23cc5c4 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -1,7 +1,12 @@
+ import { alertSuccess } from './alert';
++import Comment from './comment';
+ import $ from 'jquery';
+ import '../css/app.css';
+ 
++document.querySelectorAll('.js-comment-container').forEach(element => {
++  new Comment(element);
++});
++
+ /**
+  * Simple (ugly) code to handle the comment vote up/down
+  */
+diff --git a/assets/js/comment.js b/assets/js/comment.js
+new file mode 100644
+index 0000000..c27d106
+--- /dev/null
++++ b/assets/js/comment.js
+@@ -0,0 +1,5 @@
++export default class {
++  constructor (element) {
++    this.element = element;
++  }
++}
