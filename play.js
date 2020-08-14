@@ -7,5 +7,6 @@ qro.printNameLater()
         console.log('callback!');
         console.log(data);
     })
+;
 
 console.log('Done!');
