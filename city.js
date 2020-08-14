@@ -8,7 +8,7 @@ module.exports = class {
     }
 
     /**
-     * @returns {Promise<void>}
+     * @returns {Promise<Number>}
      */
     async printNameLater() {
         await setTimeout(() => {
