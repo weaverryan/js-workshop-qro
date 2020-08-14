@@ -7,6 +7,9 @@ module.exports = class {
         return this._name;
     }
 
+    /**
+     * @returns {Promise<void>}
+     */
     async printNameLater() {
         await setTimeout(() => {
             //reject();
