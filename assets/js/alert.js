@@ -36,8 +36,8 @@ export default class Alert {
 
 export function alertSuccess (message, options = {}) {
   options.mode = 'success';
-  const notification = new Alert(message, options);
-  notification.render();
+  const successAlert = new Alert(message, options);
+  successAlert.render();
 
-  return notification;
+  return successAlert;
 }
