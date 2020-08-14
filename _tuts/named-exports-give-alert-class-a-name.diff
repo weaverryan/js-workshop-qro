@@ -1,0 +1,12 @@
+diff --git a/assets/js/alert.js b/assets/js/alert.js
+index d06abf1..90d2ed5 100644
+--- a/assets/js/alert.js
++++ b/assets/js/alert.js
+@@ -1,6 +1,6 @@
+ import '../css/alert.css';
+ 
+-export default class {
++export default class Alert {
+   /**
+    * @param {string} message
+    * @param {object} options
