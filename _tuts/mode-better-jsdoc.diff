@@ -1,12 +1,12 @@
 diff --git a/assets/js/alert.js b/assets/js/alert.js
-index 33b07cf..e9893d8 100644
+index 33b07cf..aad260c 100644
 --- a/assets/js/alert.js
 +++ b/assets/js/alert.js
 @@ -4,6 +4,7 @@ export default class {
    /**
     * @param {string} message
     * @param {object} options
-+   * @param {string} options.mode One of "success" or "caution"
++   * @param {string} options.mode One of "success" or "error"
     */
    constructor (message, options = {}) {
      this.message = message;
