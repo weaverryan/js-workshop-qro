@@ -1,6 +1,10 @@
 import '../css/notify.css';
 
 export default class {
+  /**
+   * @param {string} message
+   * @param {object} options
+   */
   constructor (message, options) {
     this.message = message;
 
