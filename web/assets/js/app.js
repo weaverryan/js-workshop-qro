@@ -1,4 +1,4 @@
-const notify = require('./notify');
+import notify from './notify';
 
 /**
  * Simple (ugly) code to handle the comment vote up/down
