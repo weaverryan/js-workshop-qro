@@ -12,5 +12,7 @@ module.exports = class {
             //reject();
             console.log(this.name);
         }, 1000);
+
+        return Math.random();
     }
 }
