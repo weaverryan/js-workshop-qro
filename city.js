@@ -7,7 +7,7 @@ module.exports = class {
     return this._name;
   }
 
-  printNameLater() {
+  printNameLater () {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         console.log(this.name);
