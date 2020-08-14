@@ -1,0 +1,10 @@
+diff --git a/web/assets/js/app.js b/web/assets/js/app.js
+index 1819476..a113276 100644
+--- a/web/assets/js/app.js
++++ b/web/assets/js/app.js
+@@ -1,4 +1,5 @@
+ import notify from './notify';
++import $ from 'jquery';
+ 
+ /**
+  * Simple (ugly) code to handle the comment vote up/down
