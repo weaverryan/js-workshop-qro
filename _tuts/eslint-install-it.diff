@@ -1,13 +1,12 @@
 diff --git a/package.json b/package.json
-index 9cafd23..4da9bdb 100644
+index d015752..c1a3ca9 100644
 --- a/package.json
 +++ b/package.json
-@@ -1,6 +1,13 @@
+@@ -1,7 +1,13 @@
  {
    "dependencies": {
      "@symfony/webpack-encore": "^0.30.2",
 -    "core-js": "^3.6.5"
--  }
 +    "core-js": "^3.6.5",
 +    "eslint": "^7.6.0",
 +    "eslint-config-standard": "^14.1.1",
@@ -15,9 +14,9 @@ index 9cafd23..4da9bdb 100644
 +    "eslint-plugin-node": "^11.1.0",
 +    "eslint-plugin-promise": "^4.2.1",
 +    "eslint-plugin-standard": "^4.0.1"
-+  },
-+  "devDependencies": {}
- }
+   },
+   "scripts": {
+     "watch": "encore dev --watch"
 diff --git a/yarn.lock b/yarn.lock
 index d85b9e2..944b4fc 100644
 --- a/yarn.lock
