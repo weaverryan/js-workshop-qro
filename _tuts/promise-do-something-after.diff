@@ -1,0 +1,16 @@
+diff --git a/play.js b/play.js
+index 9ecd697..4fc3915 100644
+--- a/play.js
++++ b/play.js
+@@ -2,6 +2,10 @@ const City = require('./city');
+ 
+ const qro = new City('Querétaro');
+ 
+-qro.printNameLater();
++qro.printNameLater()
++    .then(() => {
++        console.log('callback!');
++    })
++;
+ 
+ console.log('Done!');
