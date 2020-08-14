@@ -1,5 +1,6 @@
 import notify from './notify';
 import $ from 'jquery';
+import 'bootstrap/dist/css/bootstrap.css';
 import '../css/app.css';
 
 /**
