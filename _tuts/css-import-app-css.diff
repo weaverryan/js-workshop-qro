@@ -1,9 +1,9 @@
 diff --git a/web/assets/js/app.js b/web/assets/js/app.js
-index a113276..4c77c69 100644
+index 9d0eec8..8995437 100644
 --- a/web/assets/js/app.js
 +++ b/web/assets/js/app.js
 @@ -1,5 +1,6 @@
- import notify from './notify';
+ import sendAlert from './alert';
  import $ from 'jquery';
 +import '../css/app.css';
  
