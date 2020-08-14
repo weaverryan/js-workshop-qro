@@ -7,13 +7,13 @@ module.exports = class {
     return this._name;
   }
 
-    /**
-     * @returns {Promise<void>}
-     */
-    async printNameLater() {
-        await setTimeout(() => {
-            //reject();
-            console.log(this.name);
-        }, 1000);
-    }
+  /**
+   * @returns {Promise<void>}
+   */
+  async printNameLater() {
+    await setTimeout(() => {
+      //reject();
+      console.log(this.name);
+    }, 1000);
+  }
 }
