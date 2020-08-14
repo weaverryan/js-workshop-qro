@@ -11,3 +11,4 @@
 
 /docker/database/data
 /node_modules/
+/web/build
