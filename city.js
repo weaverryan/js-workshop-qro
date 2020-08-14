@@ -7,10 +7,10 @@ module.exports = class {
     return this._name;
   }
 
-    printNameLater() {
-        await setTimeout(() => {
-            //reject();
-            console.log(this.name);
-        }, 1000);
-    }
+  printNameLater() {
+    await setTimeout(() => {
+      //reject();
+      console.log(this.name);
+    }, 1000);
+  }
 }
