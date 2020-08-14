@@ -1,5 +1,5 @@
 diff --git a/play.js b/play.js
-index 9ecd697..4fc3915 100644
+index 9ecd697..fa6a8c9 100644
 --- a/play.js
 +++ b/play.js
 @@ -2,6 +2,10 @@ const City = require('./city');
@@ -8,9 +8,9 @@ index 9ecd697..4fc3915 100644
  
 -qro.printNameLater();
 +qro.printNameLater()
-+    .then(() => {
-+        console.log('callback!');
-+    })
++  .then(() => {
++    console.log('callback!');
++  })
 +;
  
  console.log('Done!');
