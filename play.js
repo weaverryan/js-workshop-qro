@@ -1,3 +1,3 @@
-var city = 'Querétaro';
+const city = 'Querétaro';
 
 console.log(city);
