@@ -1,4 +1,4 @@
-import '../css/notify.css';
+import '../css/alert.css';
 
 export default class {
   /**
@@ -34,9 +34,9 @@ export default class {
   }
 }
 
-export function notifySuccess (message, options = {}) {
+export function alertSuccess (message, options = {}) {
   options.mode = 'success';
-  const notification = new Notification(message, options);
+  const notification = new Alert(message, options);
   notification.render();
 
   return notification;
