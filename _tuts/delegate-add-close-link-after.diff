@@ -1,0 +1,22 @@
+diff --git a/assets/js/alert.js b/assets/js/alert.js
+index e63e224..5d40fce 100644
+--- a/assets/js/alert.js
++++ b/assets/js/alert.js
+@@ -34,6 +34,17 @@ export default class Alert {
+     this.element.querySelectorAll('[data-dismiss]').forEach((el) => {
+       el.addEventListener('click', this.handleClickClose.bind(this));
+     });
++
++    // faking AJAX call that updates the HTML
++    setTimeout(() => {
++      // <a href="#" class="btn" data-dismiss="alert">close</a>
++      const closeTextElement = document.createElement('a');
++      closeTextElement.classList.add('btn');
++      closeTextElement.setAttribute('data-dismiss', 'alert');
++      closeTextElement.setAttribute('href', '#');
++      closeTextElement.innerHTML = 'close';
++      this.element.insertAdjacentElement('afterbegin', closeTextElement);
++    }, 1500);
+   }
+ 
+   handleClickClose (event) {
