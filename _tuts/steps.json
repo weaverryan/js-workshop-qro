@@ -1,0 +1,130 @@
+{
+    "steps": [
+        {
+            "id": "start",
+            "name": "start",
+            "description": null
+        },
+        {
+            "id": "play-js-create-basic-file",
+            "name": "play.js: create basic file",
+            "description": null
+        },
+        {
+            "id": "play-js-using-const",
+            "name": "play.js: Using const",
+            "description": null
+        },
+        {
+            "id": "play-js-basic-require",
+            "name": "play.js: basic require",
+            "description": null
+        },
+        {
+            "id": "play-js-export-class",
+            "name": "play.js: export class",
+            "description": null
+        },
+        {
+            "id": "play-js-using-getter",
+            "name": "play.js: using getter",
+            "description": null
+        },
+        {
+            "id": "play-js-settimeout",
+            "name": "play.js: setTimeout",
+            "description": null
+        },
+        {
+            "id": "play-js-move-to-printnamelater",
+            "name": "play.js: move to printNameLater()",
+            "description": null
+        },
+        {
+            "id": "play-js-arrow-function",
+            "name": "play.js: arrow function",
+            "description": null
+        },
+        {
+            "id": "promise-return-a-promise",
+            "name": "Promise: Return a promise",
+            "description": null
+        },
+        {
+            "id": "promise-do-something-after",
+            "name": "Promise: do something after",
+            "description": null
+        },
+        {
+            "id": "promise-pass-resolve-data",
+            "name": "Promise: pass resolve data",
+            "description": null
+        },
+        {
+            "id": "promise-chain-promise",
+            "name": "Promise: Chain promise",
+            "description": null
+        },
+        {
+            "id": "promise-return-new-value",
+            "name": "Promise: Return new value",
+            "description": null
+        },
+        {
+            "id": "promise-return-a-promise-from-promise",
+            "name": "Promise: Return a Promise from Promise",
+            "description": null
+        },
+        {
+            "id": "promise-reject",
+            "name": "Promise: reject()",
+            "description": null
+        },
+        {
+            "id": "promise-add-catch",
+            "name": "Promise: add .catch()",
+            "description": null
+        },
+        {
+            "id": "promise-move-catch-up-one-level",
+            "name": "Promise: move catch() up one level",
+            "description": null
+        },
+        {
+            "id": "promise-return-from-catch",
+            "name": "Promise: return from .catch()",
+            "description": null
+        },
+        {
+            "id": "promise-remove-reject",
+            "name": "Promise: remove reject()",
+            "description": null
+        },
+        {
+            "id": "await-printnamelater-to-await",
+            "name": "Await: printNameLater to await",
+            "description": null
+        },
+        {
+            "id": "await-add-async-to-function",
+            "name": "Await: add async to function",
+            "description": null
+        },
+        {
+            "id": "await-add-jsdoc",
+            "name": "Await: add jsdoc",
+            "description": null
+        },
+        {
+            "id": "await-return-from-async-function",
+            "name": "Await: return from async function",
+            "description": null
+        },
+        {
+            "id": "await-update-jsdoc",
+            "name": "Await: update jsdoc",
+            "description": null
+        }
+    ],
+    "sha": "14caa2f77ca61286a8df7d3db7cc60cc6ec41552"
+}
