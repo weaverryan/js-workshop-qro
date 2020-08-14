@@ -234,7 +234,52 @@
             "id": "css-simplify-to-bootstrap",
             "name": "CSS: simplify to ~bootstrap",
             "description": null
+        },
+        {
+            "id": "move-out-of-web-move-directory",
+            "name": "Move out of Web: move directory",
+            "description": null
+        },
+        {
+            "id": "move-out-of-web-update-webpack",
+            "name": "Move out of Web: update webpack",
+            "description": null
+        },
+        {
+            "id": "better-alert-add-html",
+            "name": "Better Alert: add HTML",
+            "description": null
+        },
+        {
+            "id": "better-alert-string-iterpolation",
+            "name": "Better Alert: string iterpolation",
+            "description": null
+        },
+        {
+            "id": "better-alert-import-css",
+            "name": "Better Alert: import CSS",
+            "description": null
+        },
+        {
+            "id": "alert-class-refactor-to-class",
+            "name": "Alert Class: refactor to class",
+            "description": null
+        },
+        {
+            "id": "alert-class-use-this-message",
+            "name": "Alert Class: use this.message",
+            "description": null
+        },
+        {
+            "id": "alert-class-use-new-class",
+            "name": "Alert Class: use new class",
+            "description": null
+        },
+        {
+            "id": "alert-class-add-isvisible",
+            "name": "Alert Class: add isVisible()",
+            "description": null
         }
     ],
-    "sha": "7ae4617aae061827cfd6bd38bfd77ab0c8beada9"
+    "sha": "63d27cca87ba67cca0c077ffd01a589e14f19ae1"
 }
