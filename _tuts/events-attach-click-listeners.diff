@@ -1,0 +1,17 @@
+diff --git a/assets/js/alert.js b/assets/js/alert.js
+index b2f4221..640310a 100644
+--- a/assets/js/alert.js
++++ b/assets/js/alert.js
+@@ -30,6 +30,12 @@ export default class Alert {
+       </button>
+     `;
+     document.body.insertAdjacentElement('afterbegin', this.element);
++
++    this.element.querySelectorAll('[data-dismiss]').forEach(function (el) {
++      el.addEventListener('click', function () {
++        this.element.remove();
++      });
++    });
+   }
+ 
+   /**
