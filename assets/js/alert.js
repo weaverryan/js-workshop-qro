@@ -1,4 +1,4 @@
-import '../css/notify.css';
+import '../css/alert.css';
 
 export default function (message) {
   const element = document.createElement('div');
