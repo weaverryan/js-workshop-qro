@@ -1,0 +1,22 @@
+diff --git a/assets/js/notify.js b/assets/js/notify.js
+index 132c9be..12ea77a 100644
+--- a/assets/js/notify.js
++++ b/assets/js/notify.js
+@@ -1,6 +1,12 @@
+-export default function (message) {
+-  const element = document.createElement('div');
+-  element.classList.add('alert', 'alert-success', 'notification');
+-  element.innerHTML = `<span class="fa fa-lightbulb"></span> ${message}`;
+-  document.body.insertAdjacentElement('afterbegin', element);
++export default class {
++  constructor (message) {
++    this.message = message;
++  }
++
++  render () {
++    const element = document.createElement('div');
++    element.classList.add('alert', 'alert-success', 'notification');
++    element.innerHTML = `<span class="fa fa-lightbulb"></span> ${message}`;
++    document.body.insertAdjacentElement('afterbegin', element);
++  }
+ }
