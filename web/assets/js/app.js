@@ -13,9 +13,9 @@ $('.js-comment-vote').on('click', async function (e) {
 
   const data = await $.ajax({
     url: $container.data('url'),
-    data: {
+    data: JSON.stringify({
       direction: $button.data('direction')
-    },
+    }),
     method: 'POST'
   });
 
