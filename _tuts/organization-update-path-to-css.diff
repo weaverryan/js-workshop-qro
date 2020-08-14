@@ -1,0 +1,10 @@
+diff --git a/assets/js/components/alert/index.js b/assets/js/components/alert/index.js
+index 94ea0e8..84f3b41 100644
+--- a/assets/js/components/alert/index.js
++++ b/assets/js/components/alert/index.js
+@@ -1,4 +1,4 @@
+-import '../../css/alert.css';
++import './alert.css';
+ import delegate from 'delegate';
+ 
+ export default class Alert {
