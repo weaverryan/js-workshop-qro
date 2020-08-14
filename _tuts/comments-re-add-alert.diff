@@ -1,0 +1,31 @@
+diff --git a/assets/js/comment.js b/assets/js/comment.js
+index fc1e672..991ee8a 100644
+--- a/assets/js/comment.js
++++ b/assets/js/comment.js
+@@ -1,5 +1,6 @@
+ import delegate from 'delegate';
+ import axios from 'axios';
++import { alertSuccess, alertError } from './alert';
+ 
+ export default class {
+   constructor (element) {
+@@ -14,10 +15,16 @@ export default class {
+     const direction = event.delegateTarget.dataset.direction;
+     const voteUrl = this.element.dataset.voteUrl;
+ 
+-    const response = await axios.post(voteUrl, {
+-      direction: direction
+-    })
++    let response;
++    try {
++      response = await axios.post(voteUrl, {
++        direction: direction
++      })
++    } catch (e) {
++      alertError('Error voting!');
++    }
+ 
+     this.element.querySelector('.js-vote-total').innerHTML = response.data.votes;
++    alertSuccess('Vote counted!');
+   }
+ }
