@@ -15,4 +15,5 @@ $('.js-comment-vote').on('click', function(e) {
     });
 
     $container.find('.js-vote-total').text(data.votes);
+    alert('Vote counted!');
 });
