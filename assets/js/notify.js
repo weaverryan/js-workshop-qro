@@ -6,7 +6,7 @@ export default class {
    * @param {object} options
    * @param {string} options.mode One of "success" or "caution"
    */
-  constructor (message, options) {
+  constructor (message, options = {}) {
     this.message = message;
 
     const defaultOptions = {
