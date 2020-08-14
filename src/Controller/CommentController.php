@@ -15,7 +15,8 @@ class CommentController extends AbstractController
      */
     public function commentVote(Comment $comment, Request $request, EntityManagerInterface $entityManager)
     {
-        $direction = $request->request->get('direction');
+        $data = json_decode($request->getContent(), true);
+        $direction = $data['direction'] ?? 'up';
 
         // use real logic here to save this to the database
         if ($direction === 'up') {
