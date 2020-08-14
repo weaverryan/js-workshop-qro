@@ -20,7 +20,7 @@ export default class Alert {
     this.element.classList.add(
       'alert',
       `alert-${this.options.mode === 'success' ? 'success' : 'danger'}`,
-      'notification'
+      'mt-alert'
     );
     this.element.innerHTML = `<span class="fa fa-lightbulb"></span> ${this.message}`;
     document.body.insertAdjacentElement('afterbegin', this.element);
