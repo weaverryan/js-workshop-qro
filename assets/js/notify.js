@@ -1,3 +1,5 @@
+import '../css/notify.css';
+
 export default class {
   constructor (message) {
     this.message = message;
