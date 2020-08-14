@@ -1,0 +1,19 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index 92640d3..d8584c3 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -1,4 +1,4 @@
+-import Alert from './alert';
++import { alertSuccess } from './alert';
+ import $ from 'jquery';
+ import '../css/app.css';
+ 
+@@ -19,7 +19,5 @@ $('.js-comment-vote').on('click', async function (e) {
+   });
+ 
+   $container.find('.js-vote-total').text(data.votes);
+-  const voteAlert = new Alert('Vote counted!');
+-  voteAlert.render();
+-  console.log(voteAlert.isVisible());
++  alertSuccess('Vote counted!');
+ });
