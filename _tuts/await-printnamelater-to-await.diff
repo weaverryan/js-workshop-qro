@@ -1,22 +1,22 @@
 diff --git a/city.js b/city.js
-index 14dccd9..c84be66 100644
+index 226b19f..5298734 100644
 --- a/city.js
 +++ b/city.js
 @@ -8,13 +8,9 @@ module.exports = class {
-     }
+   }
  
-     printNameLater() {
--        return new Promise((resolve, reject) => {
--            setTimeout(() => {
--                //reject();
--                console.log(this.name);
+   printNameLater () {
+-    return new Promise((resolve, reject) => {
+-      setTimeout(() => {
+-        //reject();
+-        console.log(this.name);
 -
--                resolve(Math.random());
--            }, 1000);
--        });
-+        await setTimeout(() => {
-+            //reject();
-+            console.log(this.name);
-+        }, 1000);
-     }
+-        resolve(Math.random());
+-      }, 1000);
+-    });
++    await setTimeout(() => {
++      //reject();
++      console.log(this.name);
++    }, 1000);
+   }
  }
