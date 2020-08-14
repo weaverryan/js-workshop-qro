@@ -1,0 +1,12 @@
+diff --git a/assets/js/comment.js b/assets/js/comment.js
+index 289d939..0f6ca73 100644
+--- a/assets/js/comment.js
++++ b/assets/js/comment.js
+@@ -8,6 +8,6 @@ export default class {
+   }
+ 
+   handleVoteClick (event) {
+-    console.log('Clicked!');
++    event.preventDefault();
+   }
+ }
