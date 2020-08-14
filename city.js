@@ -10,10 +10,10 @@ module.exports = class {
     printNameLater() {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                reject();
-                //console.log(this.name);
+                //reject();
+                console.log(this.name);
 
-                //resolve(Math.random());
+                resolve(Math.random());
             }, 1000);
         });
     }
