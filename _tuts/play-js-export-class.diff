@@ -1,17 +1,17 @@
 diff --git a/city.js b/city.js
-index 30f142b..c4979a0 100644
+index 30f142b..b5910ac 100644
 --- a/city.js
 +++ b/city.js
 @@ -1 +1,9 @@
 -module.exports = 'Querétaro';
 +module.exports = class {
-+    constructor(name) {
-+        this.name = name;
-+    }
++  constructor (name) {
++    this.name = name;
++  }
 +
-+    getName() {
-+        return this.name;
-+    }
++  getName () {
++    return this.name;
++  }
 +}
 diff --git a/play.js b/play.js
 index 6f25871..2f02eaa 100644
