@@ -1,6 +1,6 @@
 import '../css/alert.css';
 
-export default class {
+export default class Alert {
   /**
    * @param {string} message
    * @param {object} options
