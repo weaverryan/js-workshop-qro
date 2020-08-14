@@ -8,9 +8,9 @@ $('.js-comment-vote').on('click', function (e) {
 
   $.ajax({
     url: $container.data('url'),
-    data: {
+    data: JSON.stringify({
       direction: $button.data('direction')
-    },
+    }),
     method: 'POST'
   }).then(function (data) {
     $container.find('.js-vote-total').text(data.votes);
