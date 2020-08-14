@@ -1,4 +1,7 @@
 const City = require('./city');
 
 const qro = new City('Querétaro');
-console.log(qro.name);
+
+setTimeout(function() {
+    console.log(qro.name);
+}, 1000);
