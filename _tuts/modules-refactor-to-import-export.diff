@@ -1,0 +1,19 @@
+diff --git a/web/assets/js/app.js b/web/assets/js/app.js
+index b58477c..1819476 100644
+--- a/web/assets/js/app.js
++++ b/web/assets/js/app.js
+@@ -1,4 +1,4 @@
+-const notify = require('./notify');
++import notify from './notify';
+ 
+ /**
+  * Simple (ugly) code to handle the comment vote up/down
+diff --git a/web/assets/js/notify.js b/web/assets/js/notify.js
+index 08cd7b4..9e36fc2 100644
+--- a/web/assets/js/notify.js
++++ b/web/assets/js/notify.js
+@@ -1,3 +1,3 @@
+-module.exports = function(message) {
++export default function(message) {
+     alert(message);
+ };
