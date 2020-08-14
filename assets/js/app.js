@@ -1,4 +1,4 @@
-import Notification from './notify';
+import { notifySuccess } from './notify';
 import $ from 'jquery';
 import '../css/app.css';
 
@@ -19,7 +19,5 @@ $('.js-comment-vote').on('click', async function (e) {
   });
 
   $container.find('.js-vote-total').text(data.votes);
-  const notification = new Notification('Vote counted!');
-  notification.render();
-  console.log(notification.isVisible());
+  notifySuccess('Vote counted!');
 });
