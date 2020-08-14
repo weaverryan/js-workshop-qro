@@ -19,7 +19,7 @@ $('.js-comment-vote').on('click', async function (e) {
   });
 
   $container.find('.js-vote-total').text(data.votes);
-  const notification = new Notification('Vote counted!');
+  const notification = new Notification('Vote counted!', { mode: 'success' });
   notification.render();
   console.log(notification.isVisible());
 });
