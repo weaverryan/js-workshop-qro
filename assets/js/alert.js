@@ -4,7 +4,7 @@ export default class {
   /**
    * @param {string} message
    * @param {object} options
-   * @param {string} options.mode One of "success" or "caution"
+   * @param {string} options.mode One of "success" or "error"
    */
   constructor (message, options = {}) {
     this.message = message;
