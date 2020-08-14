@@ -1,0 +1,35 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index d59b325..b0bbac1 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -21,4 +21,5 @@ $('.js-comment-vote').on('click', async function (e) {
+   $container.find('.js-vote-total').text(data.votes);
+   const notification = new Notification('Vote counted!');
+   notification.render();
++  console.log(notification.isVisible());
+ });
+diff --git a/assets/js/notify.js b/assets/js/notify.js
+index db0e0b3..3e2fa33 100644
+--- a/assets/js/notify.js
++++ b/assets/js/notify.js
+@@ -4,9 +4,16 @@ export default class {
+   }
+ 
+   render () {
+-    const element = document.createElement('div');
+-    element.classList.add('alert', 'alert-success', 'notification');
+-    element.innerHTML = `<span class="fa fa-lightbulb"></span> ${this.message}`;
+-    document.body.insertAdjacentElement('afterbegin', element);
++    this.element = document.createElement('div');
++    this.element.classList.add('alert', 'alert-success', 'notification');
++    this.element.innerHTML = `<span class="fa fa-lightbulb"></span> ${this.message}`;
++    document.body.insertAdjacentElement('afterbegin', this.element);
++  }
++
++  /**
++   * @returns {boolean}
++   */
++  isVisible () {
++    return Boolean(this.element);
+   }
+ }
