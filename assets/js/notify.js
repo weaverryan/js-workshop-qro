@@ -1,3 +1,5 @@
+import '../css/notify.css';
+
 export default function (message) {
   const element = document.createElement('div');
   element.classList.add('alert', 'alert-success', 'notification');
