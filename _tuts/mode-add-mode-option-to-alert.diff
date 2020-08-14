@@ -1,0 +1,38 @@
+diff --git a/assets/js/alert.js b/assets/js/alert.js
+index 7f1d068..7991c94 100644
+--- a/assets/js/alert.js
++++ b/assets/js/alert.js
+@@ -1,13 +1,18 @@
+ import '../css/alert.css';
+ 
+ export default class {
+-  constructor (message) {
++  constructor (message, options) {
+     this.message = message;
++    this.options = options;
+   }
+ 
+   render () {
+     this.element = document.createElement('div');
+-    this.element.classList.add('alert', 'alert-success', 'mt-alert');
++    this.element.classList.add(
++      'alert',
++      `alert-${this.options.mode === 'success' ? 'success' : 'danger'}`,
++      'mt-alert'
++    );
+     this.element.innerHTML = `<span class="fa fa-lightbulb"></span> ${this.message}`;
+     document.body.insertAdjacentElement('afterbegin', this.element);
+   }
+diff --git a/assets/js/app.js b/assets/js/app.js
+index 92640d3..5cb5913 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -19,7 +19,7 @@ $('.js-comment-vote').on('click', async function (e) {
+   });
+ 
+   $container.find('.js-vote-total').text(data.votes);
+-  const voteAlert = new Alert('Vote counted!');
++  const voteAlert = new Alert('Vote counted!', { mode: 'success' });
+   voteAlert.render();
+   console.log(voteAlert.isVisible());
+ });
