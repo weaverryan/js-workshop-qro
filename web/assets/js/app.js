@@ -1,7 +1,7 @@
 /**
  * Simple (ugly) code to handle the comment vote up/down
  */
-$('.js-comment-vote').on('click', function(e) {
+$('.js-comment-vote').on('click', async function(e) {
     e.preventDefault();
     const $button = $(e.currentTarget);
     const $container = $button.closest('.js-vote-arrows');
