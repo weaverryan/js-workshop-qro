@@ -6,13 +6,13 @@ $('.js-comment-vote').on('click', function(e) {
     const $button = $(e.currentTarget);
     const $container = $button.closest('.js-vote-arrows');
 
-    $.ajax({
+    const data = await $.ajax({
         url: $container.data('url'),
         data: {
             direction: $button.data('direction')
         },
         method: 'POST'
-    }).then(function(data) {
-        $container.find('.js-vote-total').text(data.votes);
     });
+
+    $container.find('.js-vote-total').text(data.votes);
 });
