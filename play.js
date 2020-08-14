@@ -1,3 +1,4 @@
-const city = require('./city');
+const City = require('./city');
 
-console.log(city);
+const qro = new City('Querétaro');
+console.log(qro.getName());
