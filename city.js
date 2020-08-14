@@ -7,7 +7,7 @@ module.exports = class {
         return this._name;
     }
 
-    printNameLater() {
+    async printNameLater() {
         await setTimeout(() => {
             //reject();
             console.log(this.name);
