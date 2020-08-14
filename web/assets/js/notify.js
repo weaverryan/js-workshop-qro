@@ -1,3 +1,3 @@
-export default function(message) {
-    alert(message);
+export default function (message) {
+  alert(message);
 };
