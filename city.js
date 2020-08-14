@@ -10,7 +10,7 @@ module.exports = class {
   /**
    * @returns {Promise<Number>}
    */
-  async printNameLater() {
+  async printNameLater () {
     await setTimeout(() => {
       //reject();
       console.log(this.name);
