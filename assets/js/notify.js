@@ -5,7 +5,7 @@ export default class {
     this.message = message;
 
     const defaultOptions = {
-      mode: 'success',
+      mode: 'success'
     };
     this.options = { ...defaultOptions, ...options };
   }
