@@ -7,7 +7,7 @@ export default class {
 
   render () {
     this.element = document.createElement('div');
-    this.element.classList.add('alert', 'alert-success', 'notification');
+    this.element.classList.add('alert', 'alert-success', 'mt-alert');
     this.element.innerHTML = `<span class="fa fa-lightbulb"></span> ${this.message}`;
     document.body.insertAdjacentElement('afterbegin', this.element);
   }
