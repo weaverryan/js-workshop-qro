@@ -1,0 +1,13 @@
+diff --git a/assets/js/notify.js b/assets/js/notify.js
+index d1405b3..0c7c863 100644
+--- a/assets/js/notify.js
++++ b/assets/js/notify.js
+@@ -1,3 +1,6 @@
+ export default function (message) {
+-  alert(message);
+-};
++  const element = document.createElement('div');
++  element.classList.add('alert', 'alert-success');
++  element.innerHTML = '<span class="fa fa-lightbulb"></span> ' + message;
++  document.body.insertAdjacentElement('afterbegin', element);
++}
