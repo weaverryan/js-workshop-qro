@@ -15,6 +15,8 @@ qro.printNameLater()
     })
     .catch(() => {
         console.log('I failed!');
+
+        return Math.random();
     })
     .then((data) => {
         console.log(data);
