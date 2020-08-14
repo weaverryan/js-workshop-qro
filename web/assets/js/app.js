@@ -1,4 +1,5 @@
 import notify from './notify';
+import $ from 'jquery';
 
 /**
  * Simple (ugly) code to handle the comment vote up/down
