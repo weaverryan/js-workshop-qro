@@ -8,11 +8,11 @@ index 85bc3f6..8b3666b 100644
      font-family: spartan;
      color: #444;
 diff --git a/web/assets/js/app.js b/web/assets/js/app.js
-index e3dcc78..4c77c69 100644
+index 155b987..8995437 100644
 --- a/web/assets/js/app.js
 +++ b/web/assets/js/app.js
 @@ -1,6 +1,5 @@
- import notify from './notify';
+ import sendAlert from './alert';
  import $ from 'jquery';
 -import 'bootstrap/dist/css/bootstrap.css';
  import '../css/app.css';
