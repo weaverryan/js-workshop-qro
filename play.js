@@ -16,6 +16,9 @@ qro.printNameLater()
     .then((data) => {
         console.log(data);
     })
+    .catch(() => {
+        console.log('I failed!');
+    })
 ;
 
 console.log('Done!');
