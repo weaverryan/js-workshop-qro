@@ -1,0 +1,12 @@
+diff --git a/assets/js/comment.js b/assets/js/comment.js
+index 3eeba44..fc1e672 100644
+--- a/assets/js/comment.js
++++ b/assets/js/comment.js
+@@ -18,6 +18,6 @@ export default class {
+       direction: direction
+     })
+ 
+-    console.log(response);
++    this.element.querySelector('.js-vote-total').innerHTML = response.data.votes;
+   }
+ }
