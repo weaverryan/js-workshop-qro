@@ -1,0 +1,13 @@
+diff --git a/city.js b/city.js
+index c84be66..9e86383 100644
+--- a/city.js
++++ b/city.js
+@@ -7,7 +7,7 @@ module.exports = class {
+         return this._name;
+     }
+ 
+-    printNameLater() {
++    async printNameLater() {
+         await setTimeout(() => {
+             //reject();
+             console.log(this.name);
