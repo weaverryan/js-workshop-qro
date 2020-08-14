@@ -24,7 +24,7 @@ index 7f1d068..7991c94 100644
      document.body.insertAdjacentElement('afterbegin', this.element);
    }
 diff --git a/assets/js/app.js b/assets/js/app.js
-index 92640d3..5cb5913 100644
+index 4b48f43..dd9c159 100644
 --- a/assets/js/app.js
 +++ b/assets/js/app.js
 @@ -19,7 +19,7 @@ $('.js-comment-vote').on('click', async function (e) {

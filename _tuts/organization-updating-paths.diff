@@ -1,0 +1,33 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index b3c54e4..c4b897b 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -1,4 +1,4 @@
+-import Comment from './comment';
++import Comment from './components/comment';
+ import '../css/app.css';
+ 
+ document.querySelectorAll('.js-comment-container').forEach(element => {
+diff --git a/assets/js/components/alert.js b/assets/js/components/alert.js
+index 1bff0ce..94ea0e8 100644
+--- a/assets/js/components/alert.js
++++ b/assets/js/components/alert.js
+@@ -1,4 +1,4 @@
+-import '../css/alert.css';
++import '../../css/alert.css';
+ import delegate from 'delegate';
+ 
+ export default class Alert {
+diff --git a/assets/js/components/comment.js b/assets/js/components/comment.js
+index 4d83868..5b6cfdc 100644
+--- a/assets/js/components/comment.js
++++ b/assets/js/components/comment.js
+@@ -1,7 +1,7 @@
+ import delegate from 'delegate';
+ import axios from 'axios';
+ import { alertSuccess, alertError } from './alert';
+-import { getHappyMessage } from './random-message';
++import { getHappyMessage } from '../utilities/random-message';
+ 
+ export default class {
+   constructor (element) {
