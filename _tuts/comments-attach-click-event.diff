@@ -1,0 +1,18 @@
+diff --git a/assets/js/comment.js b/assets/js/comment.js
+index c27d106..289d939 100644
+--- a/assets/js/comment.js
++++ b/assets/js/comment.js
+@@ -1,5 +1,13 @@
++import delegate from 'delegate';
++
+ export default class {
+   constructor (element) {
+     this.element = element;
++
++    delegate(this.element, '.js-comment-vote', 'click', this.handleVoteClick.bind(this));
++  }
++
++  handleVoteClick (event) {
++    console.log('Clicked!');
+   }
+ }

@@ -1,0 +1,17 @@
+diff --git a/assets/js/alert.js b/assets/js/alert.js
+index 5d40fce..375be16 100644
+--- a/assets/js/alert.js
++++ b/assets/js/alert.js
+@@ -31,8 +31,10 @@ export default class Alert {
+     `;
+     document.body.insertAdjacentElement('afterbegin', this.element);
+ 
+-    this.element.querySelectorAll('[data-dismiss]').forEach((el) => {
+-      el.addEventListener('click', this.handleClickClose.bind(this));
++    this.element.addEventListener('click', (event) => {
++      if (event.target.matches('[data-dismiss]')) {
++        this.handleClickClose(event);
++      }
+     });
+ 
+     // faking AJAX call that updates the HTML
