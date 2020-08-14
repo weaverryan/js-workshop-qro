@@ -1,0 +1,14 @@
+diff --git a/play.js b/play.js
+index 6888dd7..fc65b83 100644
+--- a/play.js
++++ b/play.js
+@@ -16,6 +16,9 @@ qro.printNameLater()
+     .then((data) => {
+         console.log(data);
+     })
++    .catch(() => {
++        console.log('I failed!');
++    })
+ ;
+ 
+ console.log('Done!');
