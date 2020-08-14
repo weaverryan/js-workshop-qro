@@ -1,28 +1,28 @@
 diff --git a/city.js b/city.js
-index 61abec8..e8fb7f6 100644
+index 48e64c2..1d2abd9 100644
 --- a/city.js
 +++ b/city.js
 @@ -12,7 +12,7 @@ module.exports = class {
-             setTimeout(() => {
-                 console.log(this.name);
+       setTimeout(() => {
+         console.log(this.name);
  
--                resolve();
-+                resolve(Math.random());
-             }, 1000);
-         });
-     }
+-        resolve();
++        resolve(Math.random());
+       }, 1000);
+     });
+   }
 diff --git a/play.js b/play.js
-index 4fc3915..3e5f1ab 100644
+index fa6a8c9..f486d3b 100644
 --- a/play.js
 +++ b/play.js
 @@ -3,8 +3,9 @@ const City = require('./city');
  const qro = new City('Querétaro');
  
  qro.printNameLater()
--    .then(() => {
-+    .then((data) => {
-         console.log('callback!');
-+        console.log(data);
-     })
+-  .then(() => {
++  .then((data) => {
+     console.log('callback!');
++    console.log(data);
+   })
  ;
  
