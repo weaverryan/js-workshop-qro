@@ -7,9 +7,9 @@ module.exports = class {
     return this._name;
   }
 
-  printNameLater () {
-    setTimeout(() => {
-      console.log(this.name);
+  getPopulation () {
+    setTimeout(function() {
+      return Math.random() * 1000;
     }, 1000);
   }
 }
