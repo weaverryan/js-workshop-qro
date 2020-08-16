@@ -2,24 +2,15 @@ const City = require('./city');
 
 const qro = new City('Querétaro');
 
-qro.printNameLater()
-  .then((data) => {
+qro.getNameLater()
+  .then((name) => {
     console.log('callback!');
-    console.log(data);
-
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(data * 100);
-      }, 2000);
-    });
+    console.log(name);
   })
   .catch(() => {
     console.log('I failed!');
 
     return Math.random();
-  })
-  .then((data) => {
-    console.log(data);
   })
 ;
 

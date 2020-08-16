@@ -7,13 +7,11 @@ module.exports = class {
     return this._name;
   }
 
-  printNameLater () {
-    const randomNumber = multiplier => (Math.random() * multiplier);
-
-    await setTimeout(() => {
-      //reject();
-      console.log(this.name);
-    }, 1000);
-    console.log('after setTimeout');
+  getNameLater () {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(this.name);
+      }, 1000);
+    });
   }
 }
