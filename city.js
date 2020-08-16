@@ -14,7 +14,7 @@ module.exports = class {
   }
 
   getStats () {
-    const randomNumber = multiplier => (Math.random() * multiplier);
+    const getRandomNumber = multiplier => (Math.random() * multiplier);
 
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -22,7 +22,7 @@ module.exports = class {
 
         const stats = {
           name: this.name,
-          population: randomNumber(100000),
+          population: getRandomNumber(100000),
         }
 
         resolve(stats);
