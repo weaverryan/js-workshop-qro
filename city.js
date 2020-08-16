@@ -10,7 +10,7 @@ module.exports = class {
   printStats () {
     const stats = {
       name: this.name,
-      population: Math.random() * 1000,
+      population: Math.random() * 1000000,
     }
 
     console.log(stats);
