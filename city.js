@@ -8,8 +8,8 @@ module.exports = class {
   }
 
   printNameLater () {
-    const randomNumber = () => (Math.random());
-    randomNumber();
+    const randomNumber = (multiplier) => (Math.random() * multiplier);
+    randomNumber(10);
 
     setTimeout(() => {
       console.log(this.name);
