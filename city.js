@@ -19,6 +19,8 @@ module.exports = class {
         }
 
         console.log(stats);
+
+        resolve();
       }, 1000);
     });
   }
