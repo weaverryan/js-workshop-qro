@@ -7,7 +7,7 @@ module.exports = class {
     return this._name;
   }
 
-  fetchStats () {
+  printStats () {
     setTimeout(function() {
       return {
         name: this.name,
