@@ -18,7 +18,7 @@ qro.printStats()
   .catch(() => {
     console.log('I failed!');
 
-    return Math.random();
+    return 'unknown';
   })
   .then((data) => {
     console.log(data);
