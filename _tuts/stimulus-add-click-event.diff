@@ -1,0 +1,27 @@
+diff --git a/assets/js/controllers/comment_controller.js b/assets/js/controllers/comment_controller.js
+index b21c63f..1a1879b 100644
+--- a/assets/js/controllers/comment_controller.js
++++ b/assets/js/controllers/comment_controller.js
+@@ -1,4 +1,7 @@
+ import { Controller } from 'stimulus';
+ 
+ export default class extends Controller {
++  vote (event) {
++    console.log('Clicked!');
++  }
+ }
+diff --git a/templates/question/show.html.twig b/templates/question/show.html.twig
+index 118ee43..ef25a31 100644
+--- a/templates/question/show.html.twig
++++ b/templates/question/show.html.twig
+@@ -74,8 +74,8 @@
+                             <p>-- Mallory</p>
+                         </div>
+                         <div class="vote-arrows flex-fill pt-2 js-vote-arrows" style="min-width: 120px;">
+-                            <button class="vote-up btn btn-link js-comment-vote" data-direction="up"><i class="far fa-arrow-alt-circle-up"></i></button>
+-                            <button class="vote-down btn btn-link js-comment-vote" data-direction="down"><i class="far fa-arrow-alt-circle-down"></i></button>
++                            <button data-action="click->comment#vote" class="vote-up btn btn-link js-comment-vote" data-direction="up"><i class="far fa-arrow-alt-circle-up"></i></button>
++                            <button data-action="click->comment#vote" class="vote-down btn btn-link js-comment-vote" data-direction="down"><i class="far fa-arrow-alt-circle-down"></i></button>
+                             <span>+ <span class="js-vote-total">{{ comment.voteCount }}</span></span>
+                         </div>
+                     </div>
