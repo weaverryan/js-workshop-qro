@@ -9,13 +9,12 @@ module.exports = class {
 
   printNameLater () {
     const randomNumber = multiplier => (Math.random() * multiplier);
-    randomNumber(10);
 
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         console.log(this.name);
 
-        resolve(Math.random());
+        resolve(randomNumber(10));
       }, 1000);
     });
   }
