@@ -12,12 +12,6 @@ const
 
     // allow prototype extending (useful for dates, strings...)
     'no-extend-native': 'off',
-
-    // require combine consecutive variable declarations (var, let, const)
-    'one-var': ['error', 'consecutive'],
-
-    // console.log()
-    'no-console': 'error'
   };
 
 module.exports = {
