@@ -7,11 +7,24 @@ module.exports = class {
     return this._name;
   }
 
-  getNameLater () {
+  getStats () {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(this.name);
+        //reject();
+
+        const stats = {
+          name: this.name,
+          population: randomNumber(100000),
+        }
+
+        resolve(stats);
       }, 1000);
     });
+  }
+
+  printStats () {
+    this.getStats().then((stats) => {
+      console.log(stats);
+    })
   }
 }
