@@ -8,7 +8,7 @@ module.exports = class {
   }
 
   printStats () {
-    setTimeout(function() {
+    setTimeout(() => {
       const stats = {
         name: this.name,
         population: Math.random() * 1000,
