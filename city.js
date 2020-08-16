@@ -11,7 +11,7 @@ module.exports = class {
     setTimeout(() => {
       const stats = {
         name: this.name,
-        population: Math.random() * 1000,
+        population: Math.random() * 100000,
       }
 
       console.log(stats);
