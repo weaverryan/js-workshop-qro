@@ -20,6 +20,9 @@ qro.printStats()
 
     return 'unknown';
   })
+  .then((data) => {
+    console.log(data);
+  })
 ;
 
 console.log('End of script!');
