@@ -8,6 +8,8 @@ module.exports = class {
   }
 
   printNameLater () {
+    const randomNumber = multiplier => (Math.random() * multiplier);
+
     await setTimeout(() => {
       //reject();
       console.log(this.name);
