@@ -8,6 +8,8 @@ module.exports = class {
   }
 
   getStats () {
+    const randomNumber = multiplier => (Math.random() * multiplier);
+
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         //reject();
