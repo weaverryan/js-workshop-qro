@@ -1,0 +1,23 @@
+diff --git a/assets/js/controllers/comments-area_controller.js b/assets/js/controllers/comments-area_controller.js
+new file mode 100644
+index 0000000..b21c63f
+--- /dev/null
++++ b/assets/js/controllers/comments-area_controller.js
+@@ -0,0 +1,4 @@
++import { Controller } from 'stimulus';
++
++export default class extends Controller {
++}
+diff --git a/templates/question/show.html.twig b/templates/question/show.html.twig
+index 17355d6..2b7a171 100644
+--- a/templates/question/show.html.twig
++++ b/templates/question/show.html.twig
+@@ -55,7 +55,7 @@
+         </div>
+     </div>
+ 
+-    <div>
++    <div data-controller="comments-area">
+ 
+         <div class="d-flex justify-content-between my-4">
+             <h2 class="">Answers <span style="font-size:1.2rem;">({{ question.comments|length }})</span></h2>
