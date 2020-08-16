@@ -9,8 +9,8 @@ qro.printStats()
     console.log('callback after printStats()!');
     console.log(stats);
   })
-  .then((data) => {
-    console.log(data);
+  .then((stats) => {
+    console.log(stats);
   })
 ;
 
