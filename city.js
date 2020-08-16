@@ -9,12 +9,11 @@ module.exports = class {
 
   printStats () {
     const randomNumber = () => (Math.random());
-    randomNumber();
 
     setTimeout(() => {
       const stats = {
         name: this.name,
-        population: Math.random() * 1000,
+        population: randomNumber(),
       }
 
       console.log(stats);
