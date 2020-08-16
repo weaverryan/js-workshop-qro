@@ -1,0 +1,31 @@
+diff --git a/assets/js/controllers/comment_controller.js b/assets/js/controllers/comment_controller.js
+index 1a1879b..e4d362b 100644
+--- a/assets/js/controllers/comment_controller.js
++++ b/assets/js/controllers/comment_controller.js
+@@ -1,7 +1,25 @@
+ import { Controller } from 'stimulus';
++import axios from 'axios';
++import { alertError, alertSuccess } from '../components/alert';
++import { getHappyMessage } from '../utilities/random-message';
+ 
+ export default class extends Controller {
+   vote (event) {
+-    console.log('Clicked!');
++    event.preventDefault();
++
++    const direction = event.delegateTarget.dataset.direction;
++    const voteUrl = this.element.dataset.voteUrl;
++
++    let response;
++    try {
++      response = await axios.post(voteUrl, {
++        direction: direction
++      })
++    } catch (e) {
++      alertError('Error voting!');
++    }
++
++    this.element.querySelector('.js-vote-total').innerHTML = response.data.votes;
++    alertSuccess(`Vote counted! ${getHappyMessage()}`);
+   }
+ }
