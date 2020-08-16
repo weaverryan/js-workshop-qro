@@ -11,6 +11,8 @@ module.exports = class {
    * @returns {Promise<void>}
    */
   async printNameLater () {
+    const randomNumber = multiplier => (Math.random() * multiplier);
+
     await setTimeout(() => {
       //reject();
       console.log(this.name);
