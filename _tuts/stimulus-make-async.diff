@@ -1,0 +1,13 @@
+diff --git a/assets/js/controllers/comment_controller.js b/assets/js/controllers/comment_controller.js
+index e4d362b..8bd24b8 100644
+--- a/assets/js/controllers/comment_controller.js
++++ b/assets/js/controllers/comment_controller.js
+@@ -4,7 +4,7 @@ import { alertError, alertSuccess } from '../components/alert';
+ import { getHappyMessage } from '../utilities/random-message';
+ 
+ export default class extends Controller {
+-  vote (event) {
++  async vote (event) {
+     event.preventDefault();
+ 
+     const direction = event.delegateTarget.dataset.direction;
