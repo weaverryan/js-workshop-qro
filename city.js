@@ -7,13 +7,26 @@ module.exports = class {
     return this._name;
   }
 
-  async printNameLater () {
+  getStats () {
     const randomNumber = multiplier => (Math.random() * multiplier);
 
-    await setTimeout(() => {
-      //reject();
-      console.log(this.name);
-    }, 1000);
-    console.log('after setTimeout');
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        //reject();
+
+        const stats = {
+          name: this.name,
+          population: randomNumber(100000),
+        }
+
+        resolve(stats);
+      }, 1000);
+    });
+  }
+
+  printStats () {
+    this.getStats().then((stats) => {
+      console.log(stats);
+    })
   }
 }
