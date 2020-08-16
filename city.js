@@ -1,3 +1,9 @@
+/**
+ * @typedef {Object} Stats
+ * @property {string} name
+ * @property {number} population
+ */
+
 module.exports = class {
   constructor (name) {
     this._name = name;
@@ -7,15 +13,30 @@ module.exports = class {
     return this._name;
   }
 
-  /**
-   * @returns {Promise<Number>}
-   */
-  async printNameLater () {
-    await setTimeout(() => {
-      //reject();
-      console.log(this.name);
-    }, 1000);
+  getStats () {
+    const getRandomNumber = multiplier => (Math.random() * multiplier);
 
-    return Math.random();
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        //reject();
+
+        const stats = {
+          name: this.name,
+          population: getRandomNumber(100000),
+        }
+
+        resolve(stats);
+      }, 1000);
+    });
+  }
+
+  /**
+   * @returns {Promise<Stats>}
+   */
+  async printStats () {
+    const stats = await this.getStats();
+    console.log(stats);
+
+    return stats;
   }
 }
