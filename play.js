@@ -20,8 +20,8 @@ qro.printStats()
 
     return 'unknown';
   })
-  .then((data) => {
-    console.log(data);
+  .then((population) => {
+    console.log(population);
   })
 ;
 
