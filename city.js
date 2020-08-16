@@ -7,7 +7,7 @@ module.exports = class {
     return this._name;
   }
 
-  fetchStats () {
+  printStats () {
     return {
       name: this.name,
       population: Math.random() * 1000,
