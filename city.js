@@ -8,6 +8,9 @@ module.exports = class {
   }
 
   printNameLater () {
+    const randomNumber = () => (Math.random());
+    console.log(randomNumber());
+
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         console.log(this.name);
