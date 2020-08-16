@@ -15,8 +15,8 @@ qro.printStats()
       }, 2000);
     });
   })
-  .then((data) => {
-    console.log(data);
+  .then((population) => {
+    console.log(population);
   })
   .catch(() => {
     console.log('I failed!');
