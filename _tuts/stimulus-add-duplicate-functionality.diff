@@ -1,0 +1,14 @@
+diff --git a/assets/js/app.js b/assets/js/app.js
+index 83630a4..6c098a8 100644
+--- a/assets/js/app.js
++++ b/assets/js/app.js
+@@ -9,4 +9,9 @@ if (comments.length > 0) {
+       new Comment.default(element);
+     });
+   });
++
++  const submitAnswerButton = document.querySelector('.js-submit-answer');
++  submitAnswerButton.addEventListener('click', () => {
++    comments[0].parentElement.prepend(comments[0].cloneNode(true))
++  });
+ }
