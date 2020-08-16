@@ -1,0 +1,13 @@
+diff --git a/assets/js/controllers/comment_controller.js b/assets/js/controllers/comment_controller.js
+index 8bd24b8..c0be144 100644
+--- a/assets/js/controllers/comment_controller.js
++++ b/assets/js/controllers/comment_controller.js
+@@ -7,7 +7,7 @@ export default class extends Controller {
+   async vote (event) {
+     event.preventDefault();
+ 
+-    const direction = event.delegateTarget.dataset.direction;
++    const direction = event.currentTarget.dataset.direction;
+     const voteUrl = this.element.dataset.voteUrl;
+ 
+     let response;
