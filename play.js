@@ -18,8 +18,8 @@ qro.printStats()
   .catch(() => {
     console.log('I failed!');
   })
-  .then((data) => {
-    console.log(data);
+  .then((population) => {
+    console.log(population);
   })
 ;
 
