@@ -7,9 +7,14 @@ module.exports = class {
     return this._name;
   }
 
-  getPopulation () {
+  printStats () {
     setTimeout(function() {
-      return Math.random() * 1000;
+      const stats = {
+        name: this.name,
+        population: Math.random() * 1000,
+      }
+
+      console.log(stats);
     }, 1000);
   }
 }
