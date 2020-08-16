@@ -7,9 +7,12 @@ module.exports = class {
     return this._name;
   }
 
-  getPopulation () {
+  fetchStats () {
     setTimeout(function() {
-      return Math.random() * 1000;
+      return {
+        name: this.name,
+        population: Math.random() * 1000,
+      }
     }, 1000);
   }
 }
