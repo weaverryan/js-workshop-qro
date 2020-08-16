@@ -14,5 +14,6 @@ module.exports = class {
       //reject();
       console.log(this.name);
     }, 1000);
+    console.log('after setTimeout');
   }
 }
