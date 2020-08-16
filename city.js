@@ -8,9 +8,11 @@ module.exports = class {
   }
 
   printStats () {
-    return {
+    const stats = {
       name: this.name,
       population: Math.random() * 1000,
     }
+
+    console.log(stats);
   }
 }
