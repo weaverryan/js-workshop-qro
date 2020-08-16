@@ -1,0 +1,12 @@
+diff --git a/assets/js/controllers/comment_controller.js b/assets/js/controllers/comment_controller.js
+index 84faec1..9eb283f 100644
+--- a/assets/js/controllers/comment_controller.js
++++ b/assets/js/controllers/comment_controller.js
+@@ -2,6 +2,6 @@ import { Controller } from 'stimulus';
+ 
+ export default class extends Controller {
+   initialize () {
+-    console.log('Initialized!');
++    console.log(this.element);
+   }
+ }
