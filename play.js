@@ -11,8 +11,8 @@ qro.printStats()
 
     return Math.round(stats.population);
   })
-  .then((data) => {
-    console.log(data);
+  .then((population) => {
+    console.log(population);
   })
 ;
 
