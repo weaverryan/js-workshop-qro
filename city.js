@@ -7,15 +7,18 @@ module.exports = class {
     return this._name;
   }
 
-  printNameLater () {
+  printStats () {
     const randomNumber = multiplier => (Math.random() * multiplier);
     randomNumber(10);
 
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        console.log(this.name);
+        const stats = {
+          name: this.name,
+          population: Math.random() * 1000,
+        }
 
-        resolve();
+        console.log(stats);
       }, 1000);
     });
   }
