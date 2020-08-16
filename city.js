@@ -25,7 +25,7 @@ module.exports = class {
   }
 
   /**
-   * @returns {Promise<Number>}
+   * @returns {Promise<Object>}
    */
   async printStats () {
     const stats = await this.getStats();
