@@ -504,7 +504,107 @@
             "id": "asyncimport-finish-using-async-import",
             "name": "AsyncImport: Finish using async import",
             "description": null
+        },
+        {
+            "id": "stimulus-add-duplicate-functionality",
+            "name": "Stimulus: Add duplicate functionality",
+            "description": null
+        },
+        {
+            "id": "stimulus-install-it",
+            "name": "Stimulus: install it",
+            "description": null
+        },
+        {
+            "id": "stimulus-paste-in-setup-code",
+            "name": "Stimulus: paste in setup code",
+            "description": null
+        },
+        {
+            "id": "stimulus-bootstrap-controller",
+            "name": "Stimulus: bootstrap controller",
+            "description": null
+        },
+        {
+            "id": "stimulus-log-in-initialize",
+            "name": "Stimulus: log in initialize()",
+            "description": null
+        },
+        {
+            "id": "stimulus-add-data-controller",
+            "name": "Stimulus: add data-controller",
+            "description": null
+        },
+        {
+            "id": "stimulus-log-element",
+            "name": "Stimulus: log element",
+            "description": null
+        },
+        {
+            "id": "stimulus-comment-out-old-code",
+            "name": "Stimulus: comment-out old code",
+            "description": null
+        },
+        {
+            "id": "stimulus-instantiate-comment",
+            "name": "Stimulus: instantiate Comment",
+            "description": null
+        },
+        {
+            "id": "stimulus-remove-initialize",
+            "name": "Stimulus: remove initialize",
+            "description": null
+        },
+        {
+            "id": "stimulus-add-click-event",
+            "name": "Stimulus: add click event",
+            "description": null
+        },
+        {
+            "id": "stimulus-paste-in-old-code",
+            "name": "Stimulus: paste in old code",
+            "description": null
+        },
+        {
+            "id": "stimulus-make-async",
+            "name": "Stimulus: make async",
+            "description": null
+        },
+        {
+            "id": "stimulus-use-currenttarget",
+            "name": "Stimulus: use currentTarget",
+            "description": null
+        },
+        {
+            "id": "stimulus-add-votecount-target",
+            "name": "Stimulus: add voteCount target",
+            "description": null
+        },
+        {
+            "id": "stimulus-clean-up-old-classes",
+            "name": "Stimulus: clean up old classes",
+            "description": null
+        },
+        {
+            "id": "stimulus2-add-2nd-controller",
+            "name": "Stimulus2: add 2nd controller",
+            "description": null
+        },
+        {
+            "id": "stimulus2-add-action",
+            "name": "Stimulus2: add action",
+            "description": null
+        },
+        {
+            "id": "stimulus2-remove-old-code",
+            "name": "Stimulus2: remove old code",
+            "description": null
+        },
+        {
+            "id": "stimulus2-add-2-targets-logic",
+            "name": "Stimulus2: add 2 targets + logic",
+            "description": null
         }
     ],
-    "sha": "e5ebcefc19156193a4461d1d29f1a7d96585a266"
+    "sha": "d698813acad47f69f0145364abf2d025e13b478d"
 }
