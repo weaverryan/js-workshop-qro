@@ -1,0 +1,19 @@
+diff --git a/templates/question/show.html.twig b/templates/question/show.html.twig
+index 0507663..17355d6 100644
+--- a/templates/question/show.html.twig
++++ b/templates/question/show.html.twig
+@@ -73,10 +73,10 @@
+                             {{ comment.commentText|parse_markdown }}
+                             <p>-- Mallory</p>
+                         </div>
+-                        <div class="vote-arrows flex-fill pt-2 js-vote-arrows" style="min-width: 120px;">
+-                            <button data-action="click->comment#vote" class="vote-up btn btn-link js-comment-vote" data-direction="up"><i class="far fa-arrow-alt-circle-up"></i></button>
+-                            <button data-action="click->comment#vote" class="vote-down btn btn-link js-comment-vote" data-direction="down"><i class="far fa-arrow-alt-circle-down"></i></button>
+-                            <span>+ <span class="js-vote-total" data-target="comment.voteCount">{{ comment.voteCount }}</span></span>
++                        <div class="vote-arrows flex-fill pt-2" style="min-width: 120px;">
++                            <button data-action="click->comment#vote" class="vote-up btn btn-link" data-direction="up"><i class="far fa-arrow-alt-circle-up"></i></button>
++                            <button data-action="click->comment#vote" class="vote-down btn btn-link" data-direction="down"><i class="far fa-arrow-alt-circle-down"></i></button>
++                            <span>+ <span data-target="comment.voteCount">{{ comment.voteCount }}</span></span>
+                         </div>
+                     </div>
+                 </li>
