@@ -9,6 +9,7 @@ module.exports = class {
 
   printNameLater () {
     const randomNumber = () => (Math.random());
+    console.log(randomNumber());
 
     setTimeout(() => {
       console.log(this.name);
