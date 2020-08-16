@@ -8,7 +8,7 @@ module.exports = class {
   }
 
   printNameLater () {
-    const randomNumber = (multiplier) => (Math.random() * multiplier);
+    const randomNumber = multiplier => (Math.random() * multiplier);
     randomNumber(10);
 
     setTimeout(() => {
