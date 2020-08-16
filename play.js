@@ -2,11 +2,13 @@ const City = require('./city');
 
 const qro = new City('Querétaro');
 
-qro.printNameLater()
-  .then((data) => {
-    console.log('callback!');
-    console.log(data);
+console.log(qro.name);
+
+qro.printStats()
+  .then((stats) => {
+    console.log('callback after printStats()!');
+    console.log(stats);
   })
 ;
 
-console.log('Done!');
+console.log('End of script!');
