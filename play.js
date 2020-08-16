@@ -6,7 +6,7 @@ console.log(qro.name);
 
 qro.printStats()
   .then(() => {
-    console.log('callback!');
+    console.log('callback after printStats()!');
   })
 ;
 
