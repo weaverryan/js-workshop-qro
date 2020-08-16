@@ -6,4 +6,8 @@ module.exports = class {
   get name () {
     return this._name;
   }
+
+  getPopulation () {
+    return Math.random() * 1000;
+  }
 }
