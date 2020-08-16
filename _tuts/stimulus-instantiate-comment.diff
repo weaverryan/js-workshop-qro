@@ -1,0 +1,14 @@
+diff --git a/assets/js/controllers/comment_controller.js b/assets/js/controllers/comment_controller.js
+index 9eb283f..b9026ca 100644
+--- a/assets/js/controllers/comment_controller.js
++++ b/assets/js/controllers/comment_controller.js
+@@ -1,7 +1,8 @@
+ import { Controller } from 'stimulus';
++import Comment from '../components/comment';
+ 
+ export default class extends Controller {
+   initialize () {
+-    console.log(this.element);
++    new Comment(this.element);
+   }
+ }
