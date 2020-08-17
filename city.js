@@ -12,16 +12,16 @@ module.exports = class {
 
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        reject();
+        //reject();
 
         const stats = {
           name: this.name,
           population: getRandomNumber(100000),
         }
 
-        //console.log(stats);
+        console.log(stats);
 
-        //resolve(stats);
+        resolve(stats);
       }, 1000);
     });
   }
