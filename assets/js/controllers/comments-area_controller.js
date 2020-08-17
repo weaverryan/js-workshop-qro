@@ -1,7 +1,11 @@
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
+  static get targets () {
+    return ['comment', 'commentList'];
+  }
+
   submitAnswer () {
-    console.log('submit answer!');
+    this.commentListTarget.prepend(this.commentTargets[0].cloneNode(true))
   }
 }
