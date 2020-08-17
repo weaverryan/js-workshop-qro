@@ -1,17 +1,17 @@
 diff --git a/play.js b/play.js
-index 4d11557..931be21 100644
+index 23e1649..1727f9e 100644
 --- a/play.js
 +++ b/play.js
-@@ -7,7 +7,11 @@ qro.printNameLater()
-     console.log('callback!');
-     console.log(data);
+@@ -9,7 +9,11 @@ qro.printStats()
+     console.log('callback after printStats()!');
+     console.log(stats);
  
--    return data * 100;
+-    return Math.round(stats.population);
 +    return new Promise((resolve, reject) => {
 +      setTimeout(() => {
-+        resolve(data * 100);
++        resolve(Math.round(stats.population));
 +      }, 2000);
 +    });
    })
-   .then((data) => {
-     console.log(data);
+   .then((population) => {
+     console.log(population);
