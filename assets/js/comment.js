@@ -1,4 +1,5 @@
 import delegate from 'delegate';
+import axios from 'axios';
 
 export default class {
   constructor (element) {
@@ -12,6 +13,9 @@ export default class {
 
     const direction = event.delegateTarget.dataset.direction;
     const voteUrl = this.element.dataset.voteUrl;
-    console.log(direction, voteUrl);
+
+    axios.post(voteUrl, {
+      direction: direction
+    })
   }
 }
