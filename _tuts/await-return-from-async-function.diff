@@ -1,12 +1,12 @@
 diff --git a/city.js b/city.js
-index bfc84c0..017eca9 100644
+index 5daf4e5..17e9955 100644
 --- a/city.js
 +++ b/city.js
-@@ -15,5 +15,7 @@ module.exports = class {
-       //reject();
-       console.log(this.name);
-     }, 1000);
+@@ -30,5 +30,7 @@ module.exports = class {
+   async printStats () {
+     const stats = await this.getStats();
+     console.log(stats);
 +
-+    return Math.random();
++    return stats;
    }
  }
