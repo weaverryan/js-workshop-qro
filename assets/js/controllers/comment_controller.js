@@ -7,7 +7,7 @@ export default class extends Controller {
   async vote (event) {
     event.preventDefault();
 
-    const direction = event.delegateTarget.dataset.direction;
+    const direction = event.currentTarget.dataset.direction;
     const voteUrl = this.element.dataset.voteUrl;
 
     let response;
