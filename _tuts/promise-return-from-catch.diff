@@ -1,13 +1,13 @@
 diff --git a/play.js b/play.js
-index 383dd8b..480c5fc 100644
+index be32daa..9a19b99 100644
 --- a/play.js
 +++ b/play.js
-@@ -15,6 +15,8 @@ qro.printNameLater()
+@@ -17,6 +17,8 @@ qro.printStats()
    })
    .catch(() => {
      console.log('I failed!');
 +
-+    return Math.random();
++    return 'unknown';
    })
-   .then((data) => {
-     console.log(data);
+   .then((population) => {
+     console.log(population);
