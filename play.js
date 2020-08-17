@@ -1,3 +1,3 @@
-const city = 'Querétaro';
+const city = require('./city');
 
 console.log(city);
