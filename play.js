@@ -9,6 +9,9 @@ qro.printStats()
     console.log('callback after printStats()!');
     console.log(stats);
   })
+  .then((stats) => {
+    console.log(stats);
+  })
 ;
 
 console.log('End of script!');
