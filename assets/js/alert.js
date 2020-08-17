@@ -1,4 +1,5 @@
 import '../css/alert.css';
+import delegate from 'delegate';
 
 export default class Alert {
   /**
@@ -31,11 +32,7 @@ export default class Alert {
     `;
     document.body.insertAdjacentElement('afterbegin', this.element);
 
-    this.element.addEventListener('click', (event) => {
-      if (event.target.matches('[data-dismiss]')) {
-        this.handleClickClose(event);
-      }
-    });
+    delegate(this.element, '[data-dismiss]', 'click', this.handleClickClose.bind(this));
 
     // faking AJAX call that updates the HTML
     setTimeout(() => {
