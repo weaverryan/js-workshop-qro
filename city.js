@@ -1,3 +1,9 @@
+/**
+ * @typedef {Object} Stats
+ * @property {string} name
+ * @property {number} population
+ */
+
 module.exports = class {
   constructor (name) {
     this._name = name;
@@ -25,7 +31,7 @@ module.exports = class {
   }
 
   /**
-   * @returns {Promise<Object>}
+   * @returns {Promise<Stats>}
    */
   async printStats () {
     const stats = await this.getStats();
