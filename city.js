@@ -30,5 +30,7 @@ module.exports = class {
   async printStats () {
     const stats = await this.getStats();
     console.log(stats);
+
+    return stats;
   }
 }
