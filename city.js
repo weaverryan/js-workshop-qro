@@ -8,10 +8,12 @@ module.exports = class {
   }
 
   printStats () {
+    const getRandomNumber = () => (Math.random());
+
     setTimeout(() => {
       const stats = {
         name: this.name,
-        population: Math.random() * 100000,
+        population: getRandomNumber() * 100000,
       }
 
       console.log(stats);
