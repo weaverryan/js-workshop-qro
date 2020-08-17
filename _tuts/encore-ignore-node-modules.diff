@@ -1,8 +1,8 @@
 diff --git a/.gitignore b/.gitignore
-index e36e758..ce4f094 100644
+index 5ec2e4c..15e5ca4 100644
 --- a/.gitignore
 +++ b/.gitignore
-@@ -10,3 +10,5 @@
+@@ -11,3 +11,5 @@
  ###< symfony/framework-bundle ###
  
  /docker/database/data

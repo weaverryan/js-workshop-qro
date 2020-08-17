@@ -31,18 +31,38 @@
             "description": null
         },
         {
-            "id": "play-js-settimeout",
-            "name": "play.js: setTimeout",
+            "id": "play-js-printstats",
+            "name": "play.js: printStats()",
             "description": null
         },
         {
-            "id": "play-js-move-to-printnamelater",
-            "name": "play.js: move to printNameLater()",
+            "id": "play-js-settimeout-in-method",
+            "name": "play.js setTimeout in method",
+            "description": null
+        },
+        {
+            "id": "play-js-delete-me",
+            "name": "play.js: delete me",
             "description": null
         },
         {
             "id": "play-js-arrow-function",
             "name": "play.js: arrow function",
+            "description": null
+        },
+        {
+            "id": "play-js-other-arrow-syntax",
+            "name": "play.js: other arrow syntax",
+            "description": null
+        },
+        {
+            "id": "play-js-add-arg",
+            "name": "play.js: add arg",
+            "description": null
+        },
+        {
+            "id": "play-js-shorter-syntax",
+            "name": "play.js: shorter syntax",
             "description": null
         },
         {
@@ -101,8 +121,18 @@
             "description": null
         },
         {
-            "id": "await-printnamelater-to-await",
-            "name": "Await: printNameLater to await",
+            "id": "await-remove-chaning-code",
+            "name": "Await: remove chaning code",
+            "description": null
+        },
+        {
+            "id": "await-add-getstats",
+            "name": "Await: add getStats()",
+            "description": null
+        },
+        {
+            "id": "await-add-await",
+            "name": "Await: add await",
             "description": null
         },
         {
@@ -116,6 +146,11 @@
             "description": null
         },
         {
+            "id": "await-re-add-chaining-code",
+            "name": "Await: re-add chaining code",
+            "description": null
+        },
+        {
             "id": "await-return-from-async-function",
             "name": "Await: return from async function",
             "description": null
@@ -123,6 +158,11 @@
         {
             "id": "await-update-jsdoc",
             "name": "Await: update jsdoc",
+            "description": null
+        },
+        {
+            "id": "await-typedef",
+            "name": "Await: typedef",
             "description": null
         },
         {
@@ -606,5 +646,5 @@
             "description": null
         }
     ],
-    "sha": "d698813acad47f69f0145364abf2d025e13b478d"
+    "sha": "c33ac3a4686e6832d05550d93a8e1fb5de370731"
 }
