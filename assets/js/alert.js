@@ -31,8 +31,8 @@ export default class Alert {
     `;
     document.body.insertAdjacentElement('afterbegin', this.element);
 
-    this.element.querySelectorAll('[data-dismiss]').forEach(function (el) {
-      el.addEventListener('click', function () {
+    this.element.querySelectorAll('[data-dismiss]').forEach((el) => {
+      el.addEventListener('click', () => {
         this.element.remove();
       });
     });
