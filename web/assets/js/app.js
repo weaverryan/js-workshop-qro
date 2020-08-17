@@ -3,8 +3,8 @@
  */
 $('.js-comment-vote').on('click', function (e) {
   e.preventDefault();
-  var $button = $(e.currentTarget);
-  var $container = $button.closest('.js-vote-arrows');
+  const $button = $(e.currentTarget);
+  const $container = $button.closest('.js-vote-arrows');
 
   $.ajax({
     url: $container.data('url'),
