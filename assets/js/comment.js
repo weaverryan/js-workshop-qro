@@ -18,6 +18,6 @@ export default class {
       direction: direction
     })
 
-    console.log(response);
+    this.element.querySelector('.js-vote-total').innerHTML = response.data.votes;
   }
 }
