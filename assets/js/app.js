@@ -5,6 +5,7 @@ import '../css/app.css';
 /**
  * Simple (ugly) code to handle the comment vote up/down
  */
+/*
 $('.js-comment-vote').on('click', async function (e) {
   e.preventDefault();
   const $button = $(e.currentTarget);
@@ -21,3 +22,4 @@ $('.js-comment-vote').on('click', async function (e) {
   $container.find('.js-vote-total').text(data.votes);
   alertSuccess('Vote counted!');
 });
+*/
