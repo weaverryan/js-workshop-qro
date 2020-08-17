@@ -10,13 +10,17 @@ module.exports = class {
   printStats () {
     const getRandomNumber = multiplier => (Math.random() * multiplier);
 
-    setTimeout(() => {
-      const stats = {
-        name: this.name,
-        population: getRandomNumber(100000),
-      }
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        const stats = {
+          name: this.name,
+          population: getRandomNumber(100000),
+        }
 
-      console.log(stats);
-    }, 1000);
+        console.log(stats);
+
+        resolve();
+      }, 1000);
+    });
   }
 }
