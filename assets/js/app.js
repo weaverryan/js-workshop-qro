@@ -1,6 +1,11 @@
 import { alertSuccess } from './alert';
+import Comment from './comment';
 import $ from 'jquery';
 import '../css/app.css';
+
+document.querySelectorAll('.js-comment-container').forEach(element => {
+  new Comment(element);
+});
 
 /**
  * Simple (ugly) code to handle the comment vote up/down
