@@ -11,3 +11,5 @@
 ###< symfony/framework-bundle ###
 
 /docker/database/data
+/node_modules/
+/web/build
