@@ -1,17 +1,26 @@
 diff --git a/city.js b/city.js
-index e2b57cc..48e64c2 100644
+index 57a461d..1ef16a8 100644
 --- a/city.js
 +++ b/city.js
-@@ -8,8 +8,12 @@ module.exports = class {
-   }
+@@ -10,13 +10,17 @@ module.exports = class {
+   printStats () {
+     const getRandomNumber = multiplier => (Math.random() * multiplier);
  
-   printNameLater () {
 -    setTimeout(() => {
--      console.log(this.name);
--    }, 1000);
+-      const stats = {
+-        name: this.name,
+-        population: getRandomNumber(100000),
+-      }
 +    return new Promise((resolve, reject) => {
 +      setTimeout(() => {
-+        console.log(this.name);
++        const stats = {
++          name: this.name,
++          population: getRandomNumber(100000),
++        }
+ 
+-      console.log(stats);
+-    }, 1000);
++        console.log(stats);
 +
 +        resolve();
 +      }, 1000);
