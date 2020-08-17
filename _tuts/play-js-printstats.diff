@@ -1,0 +1,29 @@
+diff --git a/city.js b/city.js
+index b97a1cd..0aa04ce 100644
+--- a/city.js
++++ b/city.js
+@@ -6,4 +6,13 @@ module.exports = class {
+   get name () {
+     return this._name;
+   }
++
++  printStats () {
++    const stats = {
++      name: this.name,
++      population: Math.random() * 1000000,
++    }
++
++    console.log(stats);
++  }
+ }
+diff --git a/play.js b/play.js
+index 1373080..b2111e0 100644
+--- a/play.js
++++ b/play.js
+@@ -1,4 +1,6 @@
+ const City = require('./city');
+ 
+ const qro = new City('Querétaro');
++
+ console.log(qro.name);
++qro.printStats();
