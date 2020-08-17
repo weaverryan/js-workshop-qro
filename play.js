@@ -18,6 +18,9 @@ qro.printStats()
   .then((population) => {
     console.log(population);
   })
+  .catch(() => {
+    console.log('I failed!');
+  })
 ;
 
 console.log('End of script!');
