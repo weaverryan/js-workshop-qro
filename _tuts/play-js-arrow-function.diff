@@ -1,13 +1,13 @@
 diff --git a/city.js b/city.js
-index bb966e1..e2b57cc 100644
+index 8659411..f5ad6f1 100644
 --- a/city.js
 +++ b/city.js
 @@ -8,7 +8,7 @@ module.exports = class {
    }
  
-   printNameLater () {
--    setTimeout(function () {
+   printStats () {
+-    setTimeout(function() {
 +    setTimeout(() => {
-       console.log(this.name);
-     }, 1000);
-   }
+       const stats = {
+         name: this.name,
+         population: Math.random() * 100000,
