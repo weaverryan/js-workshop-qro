@@ -1,6 +1,12 @@
 import '../css/app.css';
 
-// future custom JS
+// Initialize Stimulus & the controllers/ directory
+import { Application } from 'stimulus';
+import { definitionsFromContext } from 'stimulus/webpack-helpers';
+
+const application = Application.start();
+const context = require.context('./controllers', true, /\.js$/);
+application.load(definitionsFromContext(context));
 
 const comments = document.querySelectorAll('.js-comment-container');
 if (comments.length > 0) {
