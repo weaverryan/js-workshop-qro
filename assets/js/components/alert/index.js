@@ -1,4 +1,4 @@
-import '../../css/alert.css';
+import './alert.css';
 import delegate from 'delegate';
 
 export default class Alert {
