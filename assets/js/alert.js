@@ -1,7 +1,7 @@
 import '../css/alert.css';
 
 export default class {
-  constructor (message, options) {
+  constructor (message, options = {}) {
     this.message = message;
 
     const defaultOptions = {
