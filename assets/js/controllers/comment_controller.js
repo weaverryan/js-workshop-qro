@@ -4,6 +4,10 @@ import { alertError, alertSuccess } from '../components/alert';
 import { getHappyMessage } from '../utilities/random-message';
 
 export default class extends Controller {
+  static get targets () {
+    return ['voteCount'];
+  }
+
   async vote (event) {
     event.preventDefault();
 
@@ -19,7 +23,7 @@ export default class extends Controller {
       alertError('Error voting!');
     }
 
-    this.element.querySelector('.js-vote-total').innerHTML = response.data.votes;
+    this.voteCountTarget.innerHTML = response.data.votes;
     alertSuccess(`Vote counted! ${getHappyMessage()}`);
   }
 }
