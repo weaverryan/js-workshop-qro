@@ -32,7 +32,9 @@ export default class Alert {
     document.body.insertAdjacentElement('afterbegin', this.element);
 
     this.element.querySelectorAll('[data-dismiss]').forEach((el) => {
-      el.addEventListener('click', () => {
+      el.addEventListener('click', (event) => {
+        event.preventDefault();
+
         this.element.remove();
       });
     });
