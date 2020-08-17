@@ -10,6 +10,6 @@ export default class {
   handleVoteClick (event) {
     event.preventDefault();
 
-    console.log(event.delegateTarget);
+    const direction = event.delegateTarget.dataset.direction;
   }
 }
