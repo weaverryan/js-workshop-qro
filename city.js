@@ -7,7 +7,7 @@ module.exports = class {
     return this._name;
   }
 
-  printStats () {
+  getStats () {
     const getRandomNumber = multiplier => (Math.random() * multiplier);
 
     return new Promise((resolve, reject) => {
@@ -19,10 +19,14 @@ module.exports = class {
           population: getRandomNumber(100000),
         }
 
-        console.log(stats);
-
         resolve(stats);
       }, 1000);
     });
+  }
+
+  printStats () {
+    this.getStats().then((stats) => {
+      console.log(stats);
+    })
   }
 }
