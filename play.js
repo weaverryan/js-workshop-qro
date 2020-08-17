@@ -8,9 +8,11 @@ qro.printStats()
   .then((stats) => {
     console.log('callback after printStats()!');
     console.log(stats);
+
+    return Math.round(stats.population);
   })
-  .then((stats) => {
-    console.log(stats);
+  .then((population) => {
+    console.log(population);
   })
 ;
 
