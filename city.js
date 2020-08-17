@@ -8,11 +8,13 @@ module.exports = class {
   }
 
   printStats () {
-    const stats = {
-      name: this.name,
-      population: Math.random() * 1000000,
-    }
+    setTimeout(function() {
+      const stats = {
+        name: this.name,
+        population: Math.random() * 100000,
+      }
 
-    console.log(stats);
+      console.log(stats);
+    }, 1000);
   }
 }
