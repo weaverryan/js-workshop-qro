@@ -1,8 +1,0 @@
-diff --git a/assets/css/alert.css b/assets/js/components/alert/alert.css
-similarity index 100%
-rename from assets/css/alert.css
-rename to assets/js/components/alert/alert.css
-diff --git a/assets/js/components/alert.js b/assets/js/components/alert/index.js
-similarity index 100%
-rename from assets/js/components/alert.js
-rename to assets/js/components/alert/index.js
