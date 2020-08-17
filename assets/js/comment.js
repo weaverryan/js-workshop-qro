@@ -1,6 +1,7 @@
 import delegate from 'delegate';
 import axios from 'axios';
 import { alertSuccess, alertError } from './alert';
+import { getHappyMessage } from './random-message';
 
 export default class {
   constructor (element) {
@@ -25,6 +26,6 @@ export default class {
     }
 
     this.element.querySelector('.js-vote-total').innerHTML = response.data.votes;
-    alertSuccess('Vote counted!');
+    alertSuccess(`Vote counted! ${getHappyMessage()}`);
   }
 }
