@@ -24,6 +24,9 @@ module.exports = class {
     });
   }
 
+  /**
+   * @returns {Promise<void>}
+   */
   async printStats () {
     const stats = await this.getStats();
     console.log(stats);
