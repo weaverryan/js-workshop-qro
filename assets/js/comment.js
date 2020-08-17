@@ -8,6 +8,6 @@ export default class {
   }
 
   handleVoteClick (event) {
-    console.log('Clicked!');
+    event.preventDefault();
   }
 }
