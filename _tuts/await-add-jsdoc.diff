@@ -1,14 +1,14 @@
 diff --git a/city.js b/city.js
-index 6bb6f6e..bfc84c0 100644
+index 8671104..5daf4e5 100644
 --- a/city.js
 +++ b/city.js
-@@ -7,6 +7,9 @@ module.exports = class {
-     return this._name;
+@@ -24,6 +24,9 @@ module.exports = class {
+     });
    }
  
 +  /**
 +   * @returns {Promise<void>}
 +   */
-   async printNameLater () {
-     await setTimeout(() => {
-       //reject();
+   async printStats () {
+     const stats = await this.getStats();
+     console.log(stats);
