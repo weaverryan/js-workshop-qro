@@ -1,6 +1,5 @@
 import sendAlert from './alert';
 import $ from 'jquery';
-import 'bootstrap/dist/css/bootstrap.css';
 import '../css/app.css';
 
 /**
