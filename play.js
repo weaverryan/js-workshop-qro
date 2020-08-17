@@ -15,11 +15,11 @@ qro.printStats()
       }, 2000);
     });
   })
-  .then((population) => {
-    console.log(population);
-  })
   .catch(() => {
     console.log('I failed!');
+  })
+  .then((population) => {
+    console.log(population);
   })
 ;
 
