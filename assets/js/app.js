@@ -21,4 +21,5 @@ $('.js-comment-vote').on('click', async function (e) {
   $container.find('.js-vote-total').text(data.votes);
   const voteAlert = new Alert('Vote counted!');
   voteAlert.render();
+  console.log(voteAlert.isVisible());
 });
