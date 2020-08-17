@@ -9,7 +9,11 @@ qro.printStats()
     console.log('callback after printStats()!');
     console.log(stats);
 
-    return Math.round(stats.population);
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(Math.round(stats.population));
+      }, 2000);
+    });
   })
   .then((population) => {
     console.log(population);
