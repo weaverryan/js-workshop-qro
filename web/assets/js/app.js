@@ -1,4 +1,4 @@
-const sendAlert = require('./alert');
+import sendAlert from './alert';
 
 /**
  * Simple (ugly) code to handle the comment vote up/down
