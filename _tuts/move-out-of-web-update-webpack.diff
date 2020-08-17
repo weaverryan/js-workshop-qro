@@ -1,8 +1,8 @@
 diff --git a/webpack.config.js b/webpack.config.js
-index 7ab27c6..4161838 100644
+index e860f93..a54e057 100644
 --- a/webpack.config.js
 +++ b/webpack.config.js
-@@ -23,7 +23,7 @@ Encore
+@@ -21,7 +21,7 @@ Encore
       * Each entry will result in one JavaScript file (e.g. app.js)
       * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
       */
