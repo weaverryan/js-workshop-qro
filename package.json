@@ -3,6 +3,7 @@
     "@symfony/webpack-encore": "^0.30.2",
     "bootstrap": "^4.5.2",
     "core-js": "^3.6.5",
+    "delegate": "^3.2.0",
     "eslint": "^7.6.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.22.0",
