@@ -74,8 +74,8 @@
                             <p>-- Mallory</p>
                         </div>
                         <div class="vote-arrows flex-fill pt-2 js-vote-arrows" style="min-width: 120px;">
-                            <button class="vote-up btn btn-link js-comment-vote" data-direction="up"><i class="far fa-arrow-alt-circle-up"></i></button>
-                            <button class="vote-down btn btn-link js-comment-vote" data-direction="down"><i class="far fa-arrow-alt-circle-down"></i></button>
+                            <button data-action="click->comment#vote" class="vote-up btn btn-link js-comment-vote" data-direction="up"><i class="far fa-arrow-alt-circle-up"></i></button>
+                            <button data-action="click->comment#vote" class="vote-down btn btn-link js-comment-vote" data-direction="down"><i class="far fa-arrow-alt-circle-down"></i></button>
                             <span>+ <span class="js-vote-total">{{ comment.voteCount }}</span></span>
                         </div>
                     </div>
