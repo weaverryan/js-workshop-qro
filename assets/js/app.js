@@ -4,5 +4,7 @@ import '../css/app.css';
 
 const comments = document.querySelectorAll('.js-comment-container');
 if (comments.length > 0) {
-  console.log('we should load the comments logic!');
+  import('./components/comment').then(Comment => {
+    console.log(Comment);
+  });
 }
