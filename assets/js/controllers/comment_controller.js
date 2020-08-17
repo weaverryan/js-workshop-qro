@@ -4,7 +4,7 @@ import { alertError, alertSuccess } from '../components/alert';
 import { getHappyMessage } from '../utilities/random-message';
 
 export default class extends Controller {
-  vote (event) {
+  async vote (event) {
     event.preventDefault();
 
     const direction = event.delegateTarget.dataset.direction;
