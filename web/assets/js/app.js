@@ -1,4 +1,5 @@
 import sendAlert from './alert';
+import $ from 'jquery';
 
 /**
  * Simple (ugly) code to handle the comment vote up/down
