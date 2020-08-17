@@ -41,3 +41,11 @@ export function alertSuccess (message, options = {}) {
 
   return successAlert;
 }
+
+export function alertError (message, options = {}) {
+  options.mode = 'error';
+  const errorAlert = new Alert(message, options);
+  errorAlert.render();
+
+  return errorAlert;
+}
