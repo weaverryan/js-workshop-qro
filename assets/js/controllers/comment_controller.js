@@ -1,7 +1,8 @@
 import { Controller } from 'stimulus';
+import Comment from '../components/comment';
 
 export default class extends Controller {
   initialize () {
-    console.log(this.element);
+    new Comment(this.element);
   }
 }
