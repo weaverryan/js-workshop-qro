@@ -1,9 +1,9 @@
 diff --git a/webpack.config.js b/webpack.config.js
 new file mode 100644
-index 0000000..7ab27c6
+index 0000000..e860f93
 --- /dev/null
 +++ b/webpack.config.js
-@@ -0,0 +1,61 @@
+@@ -0,0 +1,52 @@
 +var Encore = require('@symfony/webpack-encore');
 +
 +// Manually configure the runtime environment if not already configured yet by the "encore" command.
@@ -17,8 +17,6 @@ index 0000000..7ab27c6
 +  .setOutputPath('web/build/')
 +// public path used by the web server to access the output path
 +  .setPublicPath('/build')
-+// only needed for CDN's or sub-directory deploy
-+// .setManifestKeyPrefix('build/')
 +
 +/*
 +     * ENTRY CONFIG
@@ -41,13 +39,6 @@ index 0000000..7ab27c6
 +// .enableSingleRuntimeChunk()
 +  .disableSingleRuntimeChunk()
 +
-+/*
-+     * FEATURE CONFIG
-+     *
-+     * Enable & configure other features below. For a full
-+     * list of features, see:
-+     * https://symfony.com/doc/current/frontend.html#adding-more-features
-+     */
 +  .cleanupOutputBeforeBuild()
 +// .enableBuildNotifications()
 +  .enableSourceMaps(!Encore.isProduction())
