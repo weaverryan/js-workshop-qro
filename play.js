@@ -5,8 +5,9 @@ const qro = new City('Querétaro');
 console.log(qro.name);
 
 qro.printStats()
-  .then(() => {
+  .then((stats) => {
     console.log('callback after printStats()!');
+    console.log(stats);
   })
 ;
 

@@ -19,7 +19,7 @@ module.exports = class {
 
         console.log(stats);
 
-        resolve();
+        resolve(stats);
       }, 1000);
     });
   }
