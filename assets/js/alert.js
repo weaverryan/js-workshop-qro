@@ -31,8 +31,10 @@ export default class Alert {
     `;
     document.body.insertAdjacentElement('afterbegin', this.element);
 
-    this.element.querySelectorAll('[data-dismiss]').forEach((el) => {
-      el.addEventListener('click', this.handleClickClose.bind(this));
+    this.element.addEventListener('click', (event) => {
+      if (event.target.matches('[data-dismiss]')) {
+        this.handleClickClose(event);
+      }
     });
 
     // faking AJAX call that updates the HTML
