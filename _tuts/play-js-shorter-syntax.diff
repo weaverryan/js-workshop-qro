@@ -1,0 +1,13 @@
+diff --git a/city.js b/city.js
+index 0659e9a..57a461d 100644
+--- a/city.js
++++ b/city.js
+@@ -8,7 +8,7 @@ module.exports = class {
+   }
+ 
+   printStats () {
+-    const getRandomNumber = (multiplier) => (Math.random() * multiplier);
++    const getRandomNumber = multiplier => (Math.random() * multiplier);
+ 
+     setTimeout(() => {
+       const stats = {
