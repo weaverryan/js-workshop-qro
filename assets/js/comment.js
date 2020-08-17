@@ -11,5 +11,7 @@ export default class {
     event.preventDefault();
 
     const direction = event.delegateTarget.dataset.direction;
+    const voteUrl = this.element.dataset.voteUrl;
+    console.log(direction, voteUrl);
   }
 }

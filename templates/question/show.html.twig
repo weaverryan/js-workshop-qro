@@ -52,7 +52,7 @@
 
         <ul class="list-unstyled">
             {% for comment in question.comments %}
-                <li class="mb-4 js-comment-container">
+                <li class="mb-4 js-comment-container" data-vote-url="{{ path('app_comment_vote', {id: comment.id}) }}">
                     <div class="d-flex justify-content-center">
                         <div class="mr-2 pt-2">
                             <img src="{{ asset('images/tisha.png') }}" width="50" height="50" alt="Tisha avatar">
@@ -61,7 +61,7 @@
                             {{ comment.commentText|parse_markdown }}
                             <p>-- Mallory</p>
                         </div>
-                        <div class="vote-arrows flex-fill pt-2 js-vote-arrows" data-url="{{ path('app_comment_vote', {id: comment.id}) }}" style="min-width: 120px;">
+                        <div class="vote-arrows flex-fill pt-2 js-vote-arrows" style="min-width: 120px;">
                             <button class="vote-up btn btn-link js-comment-vote" data-direction="up"><i class="far fa-arrow-alt-circle-up"></i></button>
                             <button class="vote-down btn btn-link js-comment-vote" data-direction="down"><i class="far fa-arrow-alt-circle-down"></i></button>
                             <span>+ <span class="js-vote-total">{{ comment.voteCount }}</span></span>
