@@ -1,7 +1,7 @@
 import delegate from 'delegate';
 import axios from 'axios';
 import { alertSuccess, alertError } from './alert';
-import { getHappyMessage } from './random-message';
+import { getHappyMessage } from '../utilities/random-message';
 
 export default class {
   constructor (element) {
