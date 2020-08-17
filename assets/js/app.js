@@ -1,4 +1,4 @@
-import sendAlert from './alert';
+import Alert from './alert';
 import $ from 'jquery';
 import '../css/app.css';
 
@@ -19,5 +19,6 @@ $('.js-comment-vote').on('click', async function (e) {
   });
 
   $container.find('.js-vote-total').text(data.votes);
-  sendAlert('Vote counted!');
+  const voteAlert = new Alert('Vote counted!');
+  voteAlert.render();
 });
