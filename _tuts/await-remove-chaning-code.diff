@@ -1,0 +1,19 @@
+diff --git a/play.js b/play.js
+index 9a19b99..0df1f31 100644
+--- a/play.js
++++ b/play.js
+@@ -5,6 +5,7 @@ const qro = new City('Querétaro');
+ console.log(qro.name);
+ 
+ qro.printStats()
++/*
+   .then((stats) => {
+     console.log('callback after printStats()!');
+     console.log(stats);
+@@ -24,5 +25,5 @@ qro.printStats()
+     console.log(population);
+   })
+ ;
+-
++*/
+ console.log('End of script!');
