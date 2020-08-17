@@ -1,14 +1,14 @@
 diff --git a/play.js b/play.js
-index f486d3b..b6d16b8 100644
+index 8cf5a69..1c11834 100644
 --- a/play.js
 +++ b/play.js
-@@ -7,6 +7,9 @@ qro.printNameLater()
-     console.log('callback!');
-     console.log(data);
+@@ -9,6 +9,9 @@ qro.printStats()
+     console.log('callback after printStats()!');
+     console.log(stats);
    })
-+  .then((data) => {
-+    console.log(data);
++  .then((stats) => {
++    console.log(stats);
 +  })
  ;
  
- console.log('Done!');
+ console.log('End of script!');
