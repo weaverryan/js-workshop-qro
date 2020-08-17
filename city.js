@@ -25,8 +25,7 @@ module.exports = class {
   }
 
   printStats () {
-    this.getStats().then((stats) => {
-      console.log(stats);
-    })
+    const stats = await this.getStats();
+    console.log(stats);
   }
 }
