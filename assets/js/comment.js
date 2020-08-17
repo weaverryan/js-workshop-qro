@@ -8,14 +8,16 @@ export default class {
     delegate(this.element, '.js-comment-vote', 'click', this.handleVoteClick.bind(this));
   }
 
-  handleVoteClick (event) {
+  async handleVoteClick (event) {
     event.preventDefault();
 
     const direction = event.delegateTarget.dataset.direction;
     const voteUrl = this.element.dataset.voteUrl;
 
-    axios.post(voteUrl, {
+    const response = await axios.post(voteUrl, {
       direction: direction
     })
+
+    console.log(response);
   }
 }
