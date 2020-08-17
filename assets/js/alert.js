@@ -33,3 +33,11 @@ export default class {
     return Boolean(this.element);
   }
 }
+
+export function alertSuccess (message, options = {}) {
+  options.mode = 'success';
+  const successAlert = new Alert(message, options);
+  successAlert.render();
+
+  return successAlert;
+}
