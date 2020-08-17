@@ -24,7 +24,7 @@ module.exports = class {
     });
   }
 
-  printStats () {
+  async printStats () {
     const stats = await this.getStats();
     console.log(stats);
   }
