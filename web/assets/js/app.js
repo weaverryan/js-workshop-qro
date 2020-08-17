@@ -1,3 +1,5 @@
+const sendAlert = require('./alert');
+
 /**
  * Simple (ugly) code to handle the comment vote up/down
  */
@@ -15,5 +17,5 @@ $('.js-comment-vote').on('click', async function (e) {
   });
 
   $container.find('.js-vote-total').text(data.votes);
-  alert('Vote counted!');
+  sendAlert('Vote counted!');
 });
