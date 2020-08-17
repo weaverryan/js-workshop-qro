@@ -8,7 +8,7 @@ module.exports = class {
   }
 
   printStats () {
-    const getRandomNumber = (multiplier) => (Math.random() * multiplier);
+    const getRandomNumber = multiplier => (Math.random() * multiplier);
 
     setTimeout(() => {
       const stats = {
