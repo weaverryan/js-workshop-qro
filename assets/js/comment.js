@@ -9,5 +9,7 @@ export default class {
 
   handleVoteClick (event) {
     event.preventDefault();
+
+    console.log(event.delegateTarget);
   }
 }
