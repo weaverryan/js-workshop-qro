@@ -33,11 +33,15 @@ export default class Alert {
 
     this.element.querySelectorAll('[data-dismiss]').forEach((el) => {
       el.addEventListener('click', (event) => {
-        event.preventDefault();
-
-        this.element.remove();
+        this.handleClickClose(event);
       });
     });
+  }
+
+  handleClickClose (event) {
+    event.preventDefault();
+
+    this.element.remove();
   }
 
   /**
