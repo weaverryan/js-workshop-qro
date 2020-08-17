@@ -11,8 +11,6 @@ Encore
   .setOutputPath('web/build/')
 // public path used by the web server to access the output path
   .setPublicPath('/build')
-// only needed for CDN's or sub-directory deploy
-// .setManifestKeyPrefix('build/')
 
 /*
      * ENTRY CONFIG
@@ -35,13 +33,6 @@ Encore
 // .enableSingleRuntimeChunk()
   .disableSingleRuntimeChunk()
 
-/*
-     * FEATURE CONFIG
-     *
-     * Enable & configure other features below. For a full
-     * list of features, see:
-     * https://symfony.com/doc/current/frontend.html#adding-more-features
-     */
   .cleanupOutputBeforeBuild()
 // .enableBuildNotifications()
   .enableSourceMaps(!Encore.isProduction())
