@@ -30,6 +30,12 @@ export default class Alert {
       </button>
     `;
     document.body.insertAdjacentElement('afterbegin', this.element);
+
+    this.element.querySelectorAll('[data-dismiss]').forEach(function (el) {
+      el.addEventListener('click', function () {
+        this.element.remove();
+      });
+    });
   }
 
   /**
