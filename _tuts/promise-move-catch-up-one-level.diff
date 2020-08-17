@@ -1,20 +1,20 @@
 diff --git a/play.js b/play.js
-index f9b7856..383dd8b 100644
+index 82b25b5..be32daa 100644
 --- a/play.js
 +++ b/play.js
-@@ -13,12 +13,12 @@ qro.printNameLater()
+@@ -15,12 +15,12 @@ qro.printStats()
        }, 2000);
      });
    })
--  .then((data) => {
--    console.log(data);
+-  .then((population) => {
+-    console.log(population);
 -  })
    .catch(() => {
      console.log('I failed!');
    })
-+  .then((data) => {
-+    console.log(data);
++  .then((population) => {
++    console.log(population);
 +  })
  ;
  
- console.log('Done!');
+ console.log('End of script!');
