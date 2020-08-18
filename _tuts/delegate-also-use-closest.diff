@@ -1,0 +1,13 @@
+diff --git a/assets/js/alert.js b/assets/js/alert.js
+index 01166ad..b0cafd3 100644
+--- a/assets/js/alert.js
++++ b/assets/js/alert.js
+@@ -33,7 +33,7 @@ export default class Alert {
+ 
+     this.element.addEventListener('click', (event) => {
+       const dismissElement = event.target.closest('[data-dismiss]');
+-      if (dismissElement) {
++      if (dismissElement && this.element.contains(dismissElement)) {
+         this.handleClickClose(event);
+       }
+     });
