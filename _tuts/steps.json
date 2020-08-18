@@ -416,6 +416,16 @@
             "description": null
         },
         {
+            "id": "delegate-use-closest",
+            "name": "Delegate: use closest",
+            "description": null
+        },
+        {
+            "id": "delegate-also-use-closest",
+            "name": "Delegate: also use closest()",
+            "description": null
+        },
+        {
             "id": "delegate-install-delegate",
             "name": "Delegate: install delegate",
             "description": null
@@ -646,5 +656,5 @@
             "description": null
         }
     ],
-    "sha": "c33ac3a4686e6832d05550d93a8e1fb5de370731"
+    "sha": "d118f0643ba0405d1ae60c3b5cb191c2da9a7daf"
 }
